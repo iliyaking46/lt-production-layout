@@ -8,8 +8,49 @@
 
 nav ul a,
 nav .brand-logo {
-  color: #444;
+    color: #444;
 }
+
+.brand-logo img{
+    width: 50px;
+    margin-top: 5px;
+}
+
+.nav-wrapper__dekstop-links-list{
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-wrapper__dekstop-link-element{
+    overflow: hidden;
+    background: transparent;
+    border: none;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.nav-wrapper__dekstop-link-element a{
+    display: inline;
+    padding: 0;
+}
+
+.nav-wrapper__dekstop-underline {
+  width: 0;
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 10px;
+  background: #FFF400;
+  height: 4px;
+  border: 1px solid #FFF400;
+  transition: margin-left .5s ease-in-out, width .3s ease-out .08s;
+}
+
+.nav-wrapper__dekstop-link-element a:hover{
+    background: none;
+}
+
 
 p {
   line-height: 2rem;
@@ -55,3 +96,5 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+

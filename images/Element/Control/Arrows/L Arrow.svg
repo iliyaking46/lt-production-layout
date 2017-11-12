@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="42px" viewBox="0 0 20 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>Element / Control / Arrows / L Arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0.309072039,20.1269299 L18.200072,0.345827305 C18.6206369,-0.116350064 19.3013879,-0.115115977 19.720572,0.348583715 C20.1397562,0.812283407 20.1386369,1.56285506 19.718072,2.02503243 L2.59007204,20.9615709 L19.715072,39.8992119 C20.0216753,40.2387029 20.1138863,40.7477276 19.9490879,41.1910295 C19.7842895,41.6343314 19.3945801,41.9255667 18.960072,41.930135 C18.675419,41.9314019 18.4026637,41.8043384 18.205072,41.578417 L0.317072039,21.7973145 C-0.102548483,21.338049 -0.10612607,20.5910558 0.309072039,20.1269299 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-100.000000, -1035.000000)">
+            <g id="Testimonials-#13" transform="translate(0.000000, 35.000000)">
+                <g id="Slider-Controls" transform="translate(100.000000, 1000.000000)">
+                    <g id="Element-/-Control-/-Arrows-/-L-Arrow">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Arrow_Left" fill="#E2E2E2" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        <g id="Base-/-Fill-/-Gray" mask="url(#mask-2)" fill-rule="evenodd" fill="#7D7D7D">
+                            <rect id="Fill" x="0" y="0" width="26" height="49"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

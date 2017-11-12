@@ -11,11 +11,20 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="white" role="navigation">
+  <nav class="white nav" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+      <a id="logo-container" href="#" class="brand-logo">
+        <img src="images/SVG/logo.svg" alt="">
+      </a>
+
+      <ul class="right  hide-on-med-and-down  nav-wrapper__dekstop-links-list ul1">
+       <hr class="nav-wrapper__dekstop-underline hrstalk">
+        <li class="nav-wrapper__dekstop-link-element li1"><a href="#">Главная</a></li>
+        <li class="nav-wrapper__dekstop-link-element li2"><a href="#">Продукция</a></li>
+        <li class="nav-wrapper__dekstop-link-element li3"><a href="#">Услуги</a></li>
+        <li class="nav-wrapper__dekstop-link-element li4"><a href="#">Сотрудничество</a></li>
+        <li class="nav-wrapper__dekstop-link-element li5"><a href="#">Новости</a></li>
+        <li class="nav-wrapper__dekstop-link-element li6"><a href="#">Контакты</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -157,8 +166,9 @@
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
+  <script src="js/materialize.min.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/menu-underline.js"></script>
 
   </body>
 </html>
