@@ -28,12 +28,12 @@ nav .brand-logo {
     float: left;
     text-align: center;
     text-decoration: none;
-    padding: 0 20px;
+    padding: 0;
 }
 
 .nav-wrapper__dekstop-link-element a{
     display: inline;
-    padding: 0;
+    padding: 15px 20px;
 }
 
 .nav-wrapper__dekstop-underline {
@@ -51,6 +51,18 @@ nav .brand-logo {
     background: none;
 }
 
+.main-banner .section{
+    padding-top: 50px;
+}
+
+.main-banner__header {
+    font-size: 2.4em;
+}
+
+.main-banner__subheader {
+    font-size: 1.3em;
+    line-height: 1.6em;
+}
 
 p {
   line-height: 2rem;
@@ -96,5 +108,7 @@ p {
 footer.page-footer {
   margin: 0;
 }
+
+
 
 
