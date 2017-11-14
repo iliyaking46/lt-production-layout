@@ -11,6 +11,59 @@ nav .brand-logo {
     color: #444;
 }
 
+.btn, .btn-large {
+    text-decoration: none;
+		height: auto;
+		padding: 0 3rem;
+		border-radius: 5px;
+    color: #000;
+    background-color: #fff300;
+    text-align: center;
+		font-weight: 500;
+    letter-spacing: .5px;
+		text-transform: none;
+    -webkit-transition: .2s ease-out;
+    transition: .5s ease-out;
+    cursor: pointer;
+}
+.btn:hover, .btn-large:hover {
+    background-color: #ffc324;
+}
+p {
+  line-height: 2rem;
+}
+
+.button-collapse {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+
 .brand-logo img{
     width: 50px;
     margin-top: 5px;
@@ -64,50 +117,28 @@ nav .brand-logo {
     line-height: 1.6em;
 }
 
-p {
-  line-height: 2rem;
+.slider {
+	height: auto;
+	background: rgb(255,244,0);
+	background: -moz-linear-gradient(-45deg, rgba(255,244,0,1) 0%, rgba(242,158,41,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(-45deg, rgba(255,244,0,1) 0%,rgba(242,158,41,1) 100%);
+
+	background: linear-gradient(135deg, rgba(255,244,0,1) 0%,rgba(242,158,41,1) 100%);
+
 }
 
-.button-collapse {
-  color: #26a69a;
+.slider__title{
+	font-size: 2.4rem;
+	margin: 2rem 0 3rem;
+}
+.slider__info p{
+	font-size: 1.3rem;
+	font-weight: 400;
+}
+.slider__info-btn--big{
+	padding: 0.5rem 5rem;
 }
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
-}
 
 
 
