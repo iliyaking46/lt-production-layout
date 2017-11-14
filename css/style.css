@@ -10,11 +10,13 @@ nav ul a,
 nav .brand-logo {
     color: #444;
 }
-
+.company-name{
+		white-space: nowrap;
+}
 .btn, .btn-large {
     text-decoration: none;
 		height: auto;
-		padding: 0 3rem;
+		padding: 0 2rem;
 		border-radius: 5px;
     color: #000;
     background-color: #fff300;
@@ -26,7 +28,9 @@ nav .brand-logo {
     transition: .5s ease-out;
     cursor: pointer;
 }
-.btn:hover, .btn-large:hover {
+.btn:hover, .btn-large:hover,
+.btn:focus, .btn-large:focus,
+.btn-floating:focus{
     background-color: #ffc324;
 }
 p {
@@ -128,7 +132,7 @@ p {
 }
 
 .slider__title{
-	font-size: 2.4rem;
+	font-size: 2.5rem;
 	margin: 2rem 0 3rem;
 }
 .slider__info p{
@@ -143,3 +147,37 @@ p {
 
 
 
+
+.innovations {
+
+}
+
+.innovation__title {
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+.innovation-block {
+	position: relative;
+	padding: 20px;
+	min-height: 300px;
+		margin-bottom: 20px;
+}
+
+.innovation-block__title {
+		font-size: 2rem;
+		text-transform: uppercase;
+		font-weight: 300;
+}
+
+.innovation__btn--absolute {
+	position: absolute;
+	bottom: 20px;
+	right: 20px
+}
+
+/*
+.col.m3 .innovation__btn--absolute {
+	left: 50%;
+}
+*/
