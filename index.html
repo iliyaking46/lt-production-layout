@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/owl.carousel.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/owl.theme.default.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
   <nav class="white nav" role="navigation">
@@ -42,26 +44,25 @@
           <h5 class="main-banner__subheader col s12 grey-text text-darken-2">Является производителем светодиодных систем освещения, разработанных на основе собственных инновационных технологий с использованием высококачетственных компонентов. При изготовлении нашей продукции мы используем 94% комплектующих изделий собственного производства</h5>
         </div>
         <br><br>
-
       </div>
     </div>
     <div class="parallax"><img src="images/Group.png" alt="Unsplashed background img 1"></div>
   </div>
 
-	<div class="slider">
+	<div class="main-slider">
 		<div class="container">
 			<div class="section">
-
-				<div class="row">
-				 <h1 class="slider__title center">Мы занимаемся выпуском различного вида продукции:</h1>
-				 <div class="col m6 s12 slider__image">
-				 		<img src="images/lamp.png" alt="" class="responsive-img">
-				 </div>
-					<div class="col s12 m6 center slider__info">
-						<h4>Уличное освещение</h4>
-						<p class="center-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. </p>
-						<a href="#" class="btn slider__info-btn--big">Посмотреть!</a>
+				<div class="row slider__wrapper">
+				 	<h1 class="slider__title center">Мы занимаемся выпуском различного вида продукции:</h1>
+					<div class="col m6 s12 slider__image">
+						<img src="images/lamp.png" alt="" class="responsive-img">
+						<a href="#" class="btn slider__info-btn--mobile show-on-small">Посмотреть!</a>
 					</div>
+          <div class="col s12 m6 slider__info">
+            <h4>Уличное освещение</h4>
+            <p class="center-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. </p>
+            <a href="#" class="btn slider__info-btn--big hide-on-small-only">Посмотреть!</a>
+          </div>
 
 				</div>
 
@@ -73,10 +74,9 @@
 
   <div class="container">
     <div class="section">
-
-      <!--   Icon Section   -->
       <div class="row innovations">
 				<h1 class="innovation__title">Будущее и инновации от <span class="company-name">"ЛТ Продакшн"</span></h1>
+
         <div class="col s12 m7">
           <div class="innovation-block yellow accent-4">
             <h5 class="innovation-block__title center">Бипополярная ионно-воздушная кондиционируемая система нового поколения</h5>
@@ -91,7 +91,7 @@
           </div>
         </div>
 
-        <div class="col s12 m3">
+        <div class="col s12 m4">
           <div class="innovation-block amber darken-1">
             <h5 class="innovation-block__title center">Плазменная пайка</h5>
             <a href="#" class="btn innovation__btn--absolute">Узнать больше!</a>
@@ -105,7 +105,7 @@
           </div>
         </div>
 
-        <div class="col s12 m6">
+        <div class="col s12 m5">
           <div class="innovation-block yellow  darken-1">
             <h5 class="innovation-block__title center">Тепловое оборудование нового типа для предприятий</h5>
             <a href="#" class="btn innovation__btn--absolute">Узнать больше!</a>
@@ -113,73 +113,77 @@
         </div>
 
       </div>
-
     </div>
   </div>
 
+  <div class="section partners">
+		<h1 class="partners__title">Наши партнеры</h1>
+		<div class="partners__slider">
+			<div class="container">
+				<div class="row">
+					<div id="partners-slider" class="owl-carousel owl-theme owl-loaded owl-drag">
+						<div class="item">
+							<a href="#">
+								<img class="responsive-img" src="images/cree_logo.svg" >
+							</a>
+						</div>
+						<div class="item">
+							<a href="#">
+								<img class="responsive-img" src="images/cree_logo.svg" >
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
-  </div>
+  <footer class="page-footer white">
+   	<div class="footer-contacts">
+   		 <div class="container">
+					<div class="row">
+						<div class="col m4 s12">
+							<p>
+								г. Москва,<br>
+								ул. Большая Черемушкинская, д.40, корп. 1<br>
+								+7 (916) 26-23-34
+							</p>
+						</div>
 
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
-  </div>
-
-  <footer class="page-footer teal">
+						<div class="col m4 s12">
+							<p>
+								г. Санкт-Петербург,<br>
+								ул. Белы Куна, д.30, Лит. А. <br>
+								+7 (916) 26-23-34
+							</p>
+						</div>
+					</div>
+			</div>
+   	</div>
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="">Company Bio</h5>
+          <p class="">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
 
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="">Settings</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="" href="#!">Link 1</a></li>
+            <li><a class="" href="#!">Link 2</a></li>
+            <li><a class="" href="#!">Link 3</a></li>
+            <li><a class="" href="#!">Link 4</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
+          <h5 class="">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="" href="#!">Link 1</a></li>
+            <li><a class="" href="#!">Link 2</a></li>
+            <li><a class="" href="#!">Link 3</a></li>
+            <li><a class="" href="#!">Link 4</a></li>
           </ul>
         </div>
       </div>
@@ -195,8 +199,28 @@
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script src="js/init.js"></script>
   <script src="js/menu-underline.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#partners-slider').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 2000,
+            loop:true,
+            nav:false,
+            dots: false,
+            margin:0,
+            responsiveClass: true,
+            responsive: {
+                0: { items:2 },
+                700: { items:3 },
+                800: { items:3 },
+                1200: { items:4 }
+            }
+        });
+    });
 
+</script>
   </body>
 </html>
