@@ -53,12 +53,16 @@
   }
 }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
 
+@media only screen and (min-width: 601px){
+	nav,
+	nav .nav-wrapper i,
+	nav a.button-collapse,
+	nav a.button-collapse i {
+    height: 90px;
+    line-height: 64px;
+	}
+}
 .nav{
 	box-shadow: none;
 	font-family: "PT Sans Narrow", sans-serif;
@@ -69,7 +73,7 @@
 		line-height: normal;
 }
 .brand-logo img{
-    width: 65px;
+    width: 90px;
     margin-top: 5px;
 }
 
@@ -78,12 +82,17 @@
 		left: 0;
 		transform: none;
 	}
+	.brand-logo img{
+    width: 70px;
+    margin-top: 5px;
+}
 }
 
 nav .button-collapse i {
     padding-top: 15px;
 }
 .nav-wrapper__dekstop-links-list{
+		padding-top: 15px;
     list-style: none;
     text-decoration: none;
 }
@@ -125,24 +134,29 @@ nav .button-collapse i {
 
 .main-banner{
 		position: relative;
-		bottom: 65px;
-		margin-bottom: -65px;
-		min-height: 445px;
-	z-index: -1;
+		bottom: 90px;
+		margin-bottom: -90px;
+		min-height: 70vh;
+		z-index: -1;
 }
-
 .main-banner .section{
-		padding-top: 6rem;
+		padding-top: 12rem;
 }
 .main-banner__title {
     font-size: 2.5em;
 }
-@media only screen and (max-width: 993px){
-.main-banner__title {
+@media only screen and (max-width: 600px){
+	.main-banner{
+		min-height: 100vh;
+	}
+	.main-banner .section{
+		padding-top: 4rem;
+		top: 0;
+	}
+	.main-banner__title {
     font-size: 2em;
 	}
 }
-
 .main-banner__subtitle {
 		text-align: center;
     font-size: 1.3em;
@@ -317,7 +331,9 @@ nav .button-collapse i {
 .footer-contacts .row{
 		margin: 0;
 }
-
+.footer-contacts p{
+		margin: 1.5em 0;
+}
 .page-footer .footer-copyright {
 		font-weight: 500;
 		min-height: 130px;

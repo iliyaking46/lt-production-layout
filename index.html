@@ -56,13 +56,13 @@
 			<div class="item">
 				<div class="container">
 					<div class="row slider__wrapper">
-						<div class="col m6 s12 slider__image">
+						<div class="col l4 offset-l1 m6 s12 slider__image">
 							<img src="images/lamp.png" alt="" class="responsive-img">
 							<a href="#" class="btn slider__info-btn--mobile show-on-small">Посмотреть!</a>
 						</div>
-						<div class="col s12 m6 slider__info">
+						<div class="col l6 offset-l1 s12 m6 slider__info">
 							<h4>Уличное освещение</h4>
-							<p class="center-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. </p>
+							<p class="center-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros.  </p>
 							<a href="#" class="btn slider__info-btn--big hide-on-small-only">Посмотреть!</a>
 						</div>
 					</div>
@@ -72,13 +72,13 @@
 			<div class="item">
 				<div class="container">
 					<div class="row slider__wrapper">
-						<div class="col m6 s12 slider__image">
+						<div class="col l4 offset-l1 m6 s12 slider__image">
 							<img src="images/lamp.png" alt="" class="responsive-img">
 							<a href="#" class="btn slider__info-btn--mobile show-on-small">Посмотреть!</a>
 						</div>
-						<div class="col s12 m6 slider__info">
+						<div class="col l6 offset-l1 s12 m6 slider__info">
 							<h4>Уличное освещение</h4>
-							<p class="center-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. </p>
+							<p class="center-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros.  </p>
 							<a href="#" class="btn slider__info-btn--big hide-on-small-only">Посмотреть!</a>
 						</div>
 					</div>
@@ -185,7 +185,7 @@
       	<li class="social-icons__item">Inst</li>
       	<li class="social-icons__item">Twtr</li>
       </ul>
-      <img src="images/SVG/logo.svg" alt="">
+      <img src="images/SVG/logo.svg" alt="" class="hide-on-small-only">
       </div>
     </div>
   </footer>
@@ -201,7 +201,7 @@
     $(document).ready(function() {
 				$('#main-slider').owlCarousel({
             autoplay: true,
-            autoplayTimeout: 4000,
+            autoplayTimeout: 5000,
 						autoplaySpeed: 1000,
 						dragEndSpeed: 500,
 						autoplayHoverPause: true,
@@ -219,7 +219,8 @@
 
         $('#partners-slider').owlCarousel({
             autoplay: true,
-            autoplayTimeout: 2000,
+            autoplayTimeout: 3000,
+						autoplaySpeed: 2000,
             loop:true,
             nav:false,
             dots: false,
@@ -227,9 +228,9 @@
             responsiveClass: true,
             responsive: {
                 0: { items:2 },
-                700: { items:3 },
+                700: { items:2 },
                 800: { items:3 },
-                1200: { items:4 }
+                1200: { items:3 }
             }
         });
     });
