@@ -5,10 +5,15 @@
  *
  * Made By MaterializeCSS.com
  */
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic');
 
+nav{
+	font-family: "PT Sans Narrow", sans-serif;
+}
 nav ul a,
 nav .brand-logo {
     color: #444;
+
 }
 .company-name{
 		white-space: nowrap;
@@ -20,18 +25,19 @@ nav .brand-logo {
 		border-radius: 5px;
     color: #000;
     background-color: #fff300;
+		box-shadow: none;
     text-align: center;
 		font-weight: 500;
     letter-spacing: .5px;
 		text-transform: none;
     -webkit-transition: .2s ease-out;
-    transition: .5s ease-out;
+    transition: .2s ease-out;
     cursor: pointer;
 }
 .btn:hover, .btn-large:hover,
 .btn:focus, .btn-large:focus,
 .btn-floating:focus{
-    background-color: #ffc324;
+    background-color: #fff300;
 }
 p {
   line-height: 2rem;
@@ -108,22 +114,27 @@ p {
     background: none;
 }
 
-.main-banner .section{
-    padding-top: 50px;
+.main-banner__title {
+    font-size: 2.5em;
+}
+@media only screen and (max-width: 993px){
+.main-banner__title {
+    font-size: 2em;
+	}
 }
 
-.main-banner__header {
-    font-size: 2.4em;
-}
-
-.main-banner__subheader {
+.main-banner__subtitle {
     font-size: 1.3em;
     line-height: 1.6em;
 }
 
-.main-slider {
+
+
+
+.mainpage-slider {
 	position: relative;
   width: 100%;
+	padding-top: 10px;
 	background: rgb(255,244,0);
 	background: -moz-linear-gradient(-45deg, rgba(255,244,0,1) 0%, rgba(242,158,41,1) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(-45deg, rgba(255,244,0,1) 0%,rgba(242,158,41,1) 100%);
@@ -131,11 +142,44 @@ p {
 	background: linear-gradient(135deg, rgba(255,244,0,1) 0%,rgba(242,158,41,1) 100%);
 
 }
+.owl-nav [class*='owl-']{
+		position: absolute;
+    top: 0;
+    bottom: 0;
+    background: none;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+}
+@media only screen and (max-width: 993px){
+	.owl-nav [class*='owl-']{
+		width: 100px;
+	}
+}
+
+.owl-nav [class*='owl-'] img{
+		position: absolute;
+    top: 35%;
+    right: 50%;
+}
+.owl-prev{
+		left:0;
+}
+.owl-next{
+		right:0;
+}
+
 
 .slider__title{
 	font-size: 2.5rem;
 	margin: 2rem 0 3rem;
 }
+@media only screen and (max-width: 993px){
+	.slider__title {
+			font-size: 2em;
+	}
+}
+
 .slider__info{
 	text-align: center;
 }
@@ -153,11 +197,11 @@ p {
 }
 @media (max-width: 600px) {
 	.slider__title{
-		font-size: 2.2rem;
+		font-size: 2rem;
 		margin: 1rem 0 1rem;
 	}
 	.slider__info h4{
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
   .slider__wrapper {
     display: flex;
@@ -181,6 +225,12 @@ p {
 	font-size: 2.5rem;
 }
 
+@media only screen and (max-width: 993px){
+.innovation__title {
+		font-size: 2rem;
+	}
+}
+
 .innovation-block {
 	position: relative;
 	padding: 20px;
@@ -193,7 +243,11 @@ p {
 		text-transform: uppercase;
 		font-weight: 300;
 }
-
+@media only screen and (max-width: 993px){
+.innovation-block__title {
+		font-size: 1.5rem;
+	}
+}
 .innovation__btn--absolute {
 	position: absolute;
 	bottom: 20px;
@@ -229,13 +283,41 @@ p {
 }
 
 .footer-contacts {
-	background: rgb(255,244,0);
-	background: -moz-linear-gradient(-45deg, rgba(255,244,0,1) 0%, rgba(242,158,41,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, rgba(255,244,0,1) 0%,rgba(242,158,41,1) 100%);
-
-	background: linear-gradient(135deg, rgba(255,244,0,1) 0%,rgba(242,158,41,1) 100%);
-}
-.footer-contacts {
 		font-size: 1rem;
 		font-weight: 500;
+		background: rgb(255,244,0);
+		background: -moz-linear-gradient(-45deg, rgba(255,244,0,1) 0%, rgba(242,158,41,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(-45deg, rgba(255,244,0,1) 0%,rgba(242,158,41,1) 100%);
+
+		background: linear-gradient(135deg, rgba(255,244,0,1) 0%,rgba(242,158,41,1) 100%);
+}
+.footer-contacts .row{
+		margin: 0;
+}
+
+.page-footer .footer-copyright {
+		font-weight: 500;
+		min-height: 130px;
+		background: none;
+}
+
+.footer-copyright .container{
+	position: relative;
+}
+
+.social-icons-list {
+		display: inline-block;
+		margin-left: 20px;
+}
+
+.social-icons__item {
+		display: inline-block;
+		margin-right: 10px;
+}
+
+.footer-copyright img {
+		position: absolute;
+		right: 0;
+		width: 90px;
+	margin-top: -23px;
 }

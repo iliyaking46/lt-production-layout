@@ -8,9 +8,10 @@
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="css/owl.carousel.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/owl.carousel.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/owl.theme.default.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 </head>
 <body>
   <nav class="white nav" role="navigation">
@@ -37,11 +38,11 @@
   </nav>
 
   <div id="index-banner" class="parallax-container main-banner">
-    <div class="section no-pad-bot">
+    <div class="section no-pad">
       <div class="container">
-        <h2 class="main-banner__header center blue-grey-text text-darken-4">Произвоственная группа <span class="company-name">"ЛТ Продакшн"</span></h2>
+        <h1 class="main-banner__title center blue-grey-text text-darken-4">Произвоственная группа <span class="company-name">"ЛТ Продакшн"</span></h1>
         <div class="row center">
-          <h5 class="main-banner__subheader col s12 grey-text text-darken-2">Является производителем светодиодных систем освещения, разработанных на основе собственных инновационных технологий с использованием высококачетственных компонентов. При изготовлении нашей продукции мы используем 94% комплектующих изделий собственного производства</h5>
+          <h5 class="main-banner__subtitle col s12 grey-text text-darken-2">Является производителем светодиодных систем освещения, разработанных на основе собственных инновационных технологий с использованием высококачетственных компонентов. При изготовлении нашей продукции мы используем 94% комплектующих изделий собственного производства</h5>
         </div>
         <br><br>
       </div>
@@ -49,23 +50,39 @@
     <div class="parallax"><img src="images/Group.png" alt="Unsplashed background img 1"></div>
   </div>
 
-	<div class="main-slider">
-		<div class="container">
-			<div class="section">
-				<div class="row slider__wrapper">
-				 	<h1 class="slider__title center">Мы занимаемся выпуском различного вида продукции:</h1>
-					<div class="col m6 s12 slider__image">
-						<img src="images/lamp.png" alt="" class="responsive-img">
-						<a href="#" class="btn slider__info-btn--mobile show-on-small">Посмотреть!</a>
+	<div class="mainpage-slider">
+		<h1 class="slider__title center">Мы занимаемся выпуском различного вида продукции:</h1>
+		<div id="main-slider" class="owl-carousel">
+			<div class="item">
+				<div class="container">
+					<div class="row slider__wrapper">
+						<div class="col m6 s12 slider__image">
+							<img src="images/lamp.png" alt="" class="responsive-img">
+							<a href="#" class="btn slider__info-btn--mobile show-on-small">Посмотреть!</a>
+						</div>
+						<div class="col s12 m6 slider__info">
+							<h4>Уличное освещение</h4>
+							<p class="center-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. </p>
+							<a href="#" class="btn slider__info-btn--big hide-on-small-only">Посмотреть!</a>
+						</div>
 					</div>
-          <div class="col s12 m6 slider__info">
-            <h4>Уличное освещение</h4>
-            <p class="center-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. </p>
-            <a href="#" class="btn slider__info-btn--big hide-on-small-only">Посмотреть!</a>
-          </div>
-
 				</div>
+			</div>
 
+			<div class="item">
+				<div class="container">
+					<div class="row slider__wrapper">
+						<div class="col m6 s12 slider__image">
+							<img src="images/lamp.png" alt="" class="responsive-img">
+							<a href="#" class="btn slider__info-btn--mobile show-on-small">Посмотреть!</a>
+						</div>
+						<div class="col s12 m6 slider__info">
+							<h4>Уличное освещение</h4>
+							<p class="center-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. </p>
+							<a href="#" class="btn slider__info-btn--big hide-on-small-only">Посмотреть!</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -77,36 +94,36 @@
       <div class="row innovations">
 				<h1 class="innovation__title">Будущее и инновации от <span class="company-name">"ЛТ Продакшн"</span></h1>
 
-        <div class="col s12 m7">
-          <div class="innovation-block yellow accent-4">
+        <div class="col s12 m6 l7">
+          <div class="innovation-block hoverable yellow accent-4">
             <h5 class="innovation-block__title center">Бипополярная ионно-воздушная кондиционируемая система нового поколения</h5>
             <a href="#" class="btn innovation__btn--absolute">Узнать больше!</a>
           </div>
         </div>
 
-        <div class="col s12 m5">
-          <div class="innovation-block amber darken-1">
+        <div class="col s12 m6 l5">
+          <div class="innovation-block hoverable amber darken-1">
             <h5 class="innovation-block__title center">Гибкие иллюминисцентные панели</h5>
 						<a href="#" class="btn innovation__btn--absolute center">Узнать больше!</a>
           </div>
         </div>
 
-        <div class="col s12 m4">
-          <div class="innovation-block amber darken-1">
+        <div class="col s12 m6 l4">
+          <div class="innovation-block hoverable amber darken-1">
             <h5 class="innovation-block__title center">Плазменная пайка</h5>
             <a href="#" class="btn innovation__btn--absolute">Узнать больше!</a>
           </div>
         </div>
 
-        <div class="col s12 m3">
-          <div class="innovation-block yellow accent-2">
+        <div class="col s12 m6 l3">
+          <div class="innovation-block hoverable yellow accent-2">
             <h5 class="innovation-block__title center">Теплизол</h5>
             <a href="#" class="btn innovation__btn--absolute">Узнать больше!</a>
           </div>
         </div>
 
-        <div class="col s12 m5">
-          <div class="innovation-block yellow  darken-1">
+        <div class="col s12 m6 l5">
+          <div class="innovation-block hoverable yellow  darken-1">
             <h5 class="innovation-block__title center">Тепловое оборудование нового типа для предприятий</h5>
             <a href="#" class="btn innovation__btn--absolute">Узнать больше!</a>
           </div>
@@ -160,37 +177,15 @@
 					</div>
 			</div>
    	</div>
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="">Company Bio</h5>
-          <p class="">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="">Settings</h5>
-          <ul>
-            <li><a class="" href="#!">Link 1</a></li>
-            <li><a class="" href="#!">Link 2</a></li>
-            <li><a class="" href="#!">Link 3</a></li>
-            <li><a class="" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="">Connect</h5>
-          <ul>
-            <li><a class="" href="#!">Link 1</a></li>
-            <li><a class="" href="#!">Link 2</a></li>
-            <li><a class="" href="#!">Link 3</a></li>
-            <li><a class="" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      <div class="container black-text">
+      @Copyright 2017 ООО "ЛТ Продакшн".
+      <ul class="social-icons-list">
+      	<li class="social-icons__item">VK</li>
+      	<li class="social-icons__item">Inst</li>
+      	<li class="social-icons__item">Twtr</li>
+      </ul>
+      <img src="images/SVG/logo.svg" alt="">
       </div>
     </div>
   </footer>
@@ -204,6 +199,23 @@
   <script src="js/menu-underline.js"></script>
 <script>
     $(document).ready(function() {
+				$('#main-slider').owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 4000,
+						autoplaySpeed: 1000,
+						autoplayHoverPause: true,
+						navSpeed: 1000,
+            loop:true,
+						navText: ["<img src='images/arrows/larrow.svg'>","<img src='images/arrows/rarrow.svg'>"],
+            dots: false,
+            margin:0,
+            items: 1,
+						responsive: {
+								0: {nav: false},
+								900: { nav: true }
+            }
+        });
+
         $('#partners-slider').owlCarousel({
             autoplay: true,
             autoplayTimeout: 2000,
