@@ -7,7 +7,9 @@
  */
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic');
 
-
+h1, h2, h3, h4, h5, h6{
+	font-weight: 300;
+}
 .company-name{
 		white-space: nowrap;
 }
@@ -222,7 +224,7 @@ nav .button-collapse i {
 }
 .slider__info p{
 	font-size: 1.3rem;
-	font-weight: 400;
+	font-weight: 300;
 }
 .slider__info-btn--big{
 	padding: 0.5rem 5rem;
