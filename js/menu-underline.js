@@ -1,6 +1,7 @@
-    var li1o = document.getElementsByClassName("li1")[0];
+//document.addEventListener("DOMContentLoaded", function() {
+jQuery(document).ready(function($){
+		var li1o = document.getElementsByClassName("li1")[0];
     var li1 = window.getComputedStyle(li1o, null).getPropertyValue("width");
-
 
     var li2o = document.getElementsByClassName("li2")[0];
     var li2 = window.getComputedStyle(li2o, null).getPropertyValue("width");
@@ -37,42 +38,42 @@ $(".li1, .li2, .li3, .li4, .li5, .li6").mouseleave(function(){
 $(".li1").mouseenter(function(){
     $(".hrstalk").css({
       marginLeft: 0,
-      width: "calc(0px + " + li1 + ")"
+      width: "calc( " + li1 + ")"
     });
 });
 //next
 $(".li2").mouseenter(function(){
     $(".hrstalk").css({
-      marginLeft: "calc(1px + " + li1 + ")",
-      width: "calc(0px + " + li2 + ")"
+      marginLeft: "calc( " + li1 + ")",
+      width: "calc( " + li2 + ")"
     });
 });
 //next
 $(".li3").mouseenter(function(){
     $(".hrstalk").css({
-      marginLeft: "calc(2px + " + li2 + " + " + li1 + ")",
-      width: "calc(0px + " + li3 + ")"
+      marginLeft: "calc( " + li2 + " + " + li1 + ")",
+      width: "calc( " + li3 + ")"
     });
 });
 //next
 $(".li4").mouseenter(function(){
     $(".hrstalk").css({
-      marginLeft: "calc(3px + " + li1 + " + " + li2 + " + " + li3 + ")",
-      width: "calc(0px + " + li4 + ")"
+      marginLeft: "calc( " + li1 + " + " + li2 + " + " + li3 + ")",
+      width: "calc( " + li4 + ")"
     });
 });
 //next
 $(".li5").mouseenter(function(){
     $(".hrstalk").css({
-      marginLeft: "calc(6px + " + li1 + " + " + li2 + " + " + li3 + " + " + li4 + ")",
-      width: "calc(0px + " + li5 + ")"
+      marginLeft: "calc( " + li1 + " + " + li2 + " + " + li3 + " + " + li4 + ")",
+      width: "calc( " + li5 + ")"
     });
 });
 //next
 $(".li6").mouseenter(function(){
     $(".hrstalk").css({
-      marginLeft: "calc(9px + " + li1 + " + " + li2 + " + " + li3 + " + " + li4 + " + " + li5 + ")",
-      width: "calc(0px + " + li6 + ")"
+      marginLeft: "calc( " + li1 + " + " + li2 + " + " + li3 + " + " + li4 + " + " + li5 + ")",
+      width: "calc( " + li6 + ")"
     });
 });
 
@@ -82,30 +83,31 @@ $(".li6").mouseenter(function(){
 ////////////////////
 $(".li1").click(function(){
   clicked1 = 0;
-  clicked2 = "calc(0px + " + li1 + ")";
+  clicked2 = "calc( " + li1 + ")";
 });
 //next
 $(".li2").click(function(){
-  clicked1 = "calc(1px + " + li1 + ")";
-  clicked2 = "calc(0px + " + li2 + ")";
+  clicked1 = "calc( " + li1 + ")";
+  clicked2 = "calc( " + li2 + ")";
 });
 //next
 $(".li3").click(function(){
-  clicked1 = "calc(2px + " + li2 + " + " + li1 + ")";
-  clicked2 = "calc(0px + " + li3 + ")";
+  clicked1 = "calc( " + li2 + " + " + li1 + ")";
+  clicked2 = "calc( " + li3 + ")";
 });
 //next
 $(".li4").click(function(){
-  clicked1 = "calc(3px + " + li1 + " + " + li2 + " + " + li3 + ")";
-  clicked2 = "calc(0px + " + li4 + ")";
+  clicked1 = "calc( " + li1 + " + " + li2 + " + " + li3 + ")";
+  clicked2 = "calc( " + li4 + ")";
 });
 //next
 $(".li5").click(function(){
-  clicked1 = "calc(6px + " + li1 + " + " + li2 + " + " + li3 + " + " + li4 + ")";
-  clicked2 = "calc(0px + " + li5 + ")";
+  clicked1 = "calc( " + li1 + " + " + li2 + " + " + li3 + " + " + li4 + ")";
+  clicked2 = "calc( " + li5 + ")";
 });
 //next
 $(".li6").click(function(){
-  clicked1 = "calc(8px + " + li1 + " + " + li2 + " + " + li3 + " + " + li4 + " + " + li5 + ")";
-  clicked2 = "calc(2px + " + li6 + ")";
+  clicked1 = "calc( " + li1 + " + " + li2 + " + " + li3 + " + " + li4 + " + " + li5 + ")";
+  clicked2 = "calc( " + li6 + ")";
+});
 });

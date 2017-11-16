@@ -7,14 +7,7 @@
  */
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic');
 
-nav{
-	font-family: "PT Sans Narrow", sans-serif;
-}
-nav ul a,
-nav .brand-logo {
-    color: #444;
 
-}
 .company-name{
 		white-space: nowrap;
 }
@@ -39,13 +32,6 @@ nav .brand-logo {
 .btn-floating:focus{
     background-color: #fff300;
 }
-p {
-  line-height: 2rem;
-}
-
-.button-collapse {
-  color: #26a69a;
-}
 
 .parallax-container {
   min-height: 380px;
@@ -53,9 +39,9 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
-    width: 100%;
-  }
+.parallax-container .section {
+	width: 100%;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -73,12 +59,30 @@ p {
   }
 }
 
+.nav{
+	box-shadow: none;
+	font-family: "PT Sans Narrow", sans-serif;
+	line-height: 62px!important;
+}
 
+.brand-logo{
+		line-height: normal;
+}
 .brand-logo img{
-    width: 50px;
+    width: 65px;
     margin-top: 5px;
 }
 
+@media only screen and (max-width: 992px){
+	nav .brand-logo {
+		left: 0;
+		transform: none;
+	}
+}
+
+nav .button-collapse i {
+    padding-top: 15px;
+}
 .nav-wrapper__dekstop-links-list{
     list-style: none;
     text-decoration: none;
@@ -95,8 +99,10 @@ p {
 }
 
 .nav-wrapper__dekstop-link-element a{
+		color: #444;
     display: inline;
     padding: 15px 20px;
+		font-size: 1.3em;
 }
 
 .nav-wrapper__dekstop-underline {
@@ -107,6 +113,7 @@ p {
   background: #FFF400;
   height: 4px;
   border: 1px solid #FFF400;
+	border: none;
   transition: margin-left .5s ease-in-out, width .3s ease-out .08s;
 }
 
@@ -114,6 +121,19 @@ p {
     background: none;
 }
 
+
+
+.main-banner{
+		position: relative;
+		bottom: 65px;
+		margin-bottom: -65px;
+		min-height: 445px;
+	z-index: -1;
+}
+
+.main-banner .section{
+		padding-top: 6rem;
+}
 .main-banner__title {
     font-size: 2.5em;
 }
@@ -124,6 +144,7 @@ p {
 }
 
 .main-banner__subtitle {
+		text-align: center;
     font-size: 1.3em;
     line-height: 1.6em;
 }
@@ -170,6 +191,9 @@ p {
 }
 
 
+.slider__wrapper{
+		margin: 0;
+}
 .slider__title{
 	font-size: 2.5rem;
 	margin: 2rem 0 3rem;
@@ -179,7 +203,6 @@ p {
 			font-size: 2em;
 	}
 }
-
 .slider__info{
 	text-align: center;
 }
@@ -192,7 +215,7 @@ p {
 }
 .slider__info-btn--mobile{
 	padding: 0.3rem 2rem;
-	margin-top: 2rem;
+	margin: 2rem 0;
 	display: none;
 }
 @media (max-width: 600px) {
@@ -222,12 +245,12 @@ p {
 
 .innovation__title {
 	text-align: center;
-	font-size: 2.5rem;
+	font-size: 2.5em;
 }
 
 @media only screen and (max-width: 993px){
 .innovation__title {
-		font-size: 2rem;
+		font-size: 2em;
 	}
 }
 
@@ -239,7 +262,7 @@ p {
 }
 
 .innovation-block__title {
-		font-size: 2rem;
+		font-size: 1.7em;
 		text-transform: uppercase;
 		font-weight: 300;
 }

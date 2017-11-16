@@ -14,7 +14,7 @@
 
 </head>
 <body>
-  <nav class="white nav" role="navigation">
+  <nav class="nav transparent" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="#" class="brand-logo">
         <img src="images/SVG/logo.svg" alt="">
@@ -33,17 +33,17 @@
       <ul id="nav-mobile" class="side-nav">
         <li><a href="#">Navbar Link</a></li>
       </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse right black-text"><i class="material-icons">menu</i></a>
     </div>
   </nav>
 
   <div id="index-banner" class="parallax-container main-banner">
     <div class="section no-pad">
       <div class="container">
-        <h1 class="main-banner__title center blue-grey-text text-darken-4">Произвоственная группа <span class="company-name">"ЛТ Продакшн"</span></h1>
-        <div class="row center">
-          <h5 class="main-banner__subtitle col s12 grey-text text-darken-2">Является производителем светодиодных систем освещения, разработанных на основе собственных инновационных технологий с использованием высококачетственных компонентов. При изготовлении нашей продукции мы используем 94% комплектующих изделий собственного производства</h5>
-        </div>
+        <h1 class="main-banner__title center blue-grey-text text-darken-4">Производственная группа <span class="company-name">"ЛТ Продакшн"</span></h1>
+
+          <h5 class="main-banner__subtitle grey-text text-darken-2">Является производителем светодиодных систем освещения, разработанных на основе собственных инновационных технологий с использованием высококачетственных компонентов. При изготовлении нашей продукции мы используем 94% комплектующих изделий собственного производства</h5>
+
         <br><br>
       </div>
     </div>
@@ -196,13 +196,14 @@
   <script src="js/materialize.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/init.js"></script>
-  <script src="js/menu-underline.js"></script>
+
 <script>
     $(document).ready(function() {
 				$('#main-slider').owlCarousel({
             autoplay: true,
             autoplayTimeout: 4000,
 						autoplaySpeed: 1000,
+						dragEndSpeed: 500,
 						autoplayHoverPause: true,
 						navSpeed: 1000,
             loop:true,
@@ -232,7 +233,7 @@
             }
         });
     });
-
 </script>
+   <script src="js/menu-underline.js"></script>
   </body>
 </html>
