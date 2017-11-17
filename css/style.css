@@ -208,8 +208,62 @@ nav .button-collapse i {
 .owl-prev{
 	left:0;
 }
+.owl-prev:hover img{
+  animation-name: bounceInLeft;
+	animation-duration: .8s;
+}
 .owl-next{
 	right:0;
+}
+.owl-next:hover img{
+  animation-name: bounceInRight;
+	animation-duration: .8s;
+}
+@keyframes bounceInLeft {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  15% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+	50% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  65% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+@keyframes bounceInRight {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  15% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+	50% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  65% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
 }
 
 
@@ -392,7 +446,7 @@ nav .button-collapse i {
 	.news-item .card-content{
 		padding: 0;
 		position: absolute;
-		width: 100%;
+		width: 101%;
 		transition: 0.5s;
 		bottom: 0;
 		-webkit-transform: translate3d(0,100%,0);
