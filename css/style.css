@@ -446,7 +446,8 @@ nav .button-collapse i {
 	.news-item .card-name{
 		position: absolute;
 		width: 100%;
-		top: -100%;
+		-webkit-transform: translate3d(0,-95%,0);
+    transform: translate3d(0,-95%,0);
 	}
 	.news-item__title{
 		padding: 24px;
@@ -471,5 +472,75 @@ nav .button-collapse i {
 }
 
 
+
+
+
+.service-title{
+	font-size: 2.5em;
+}
+.service-item{
+	position: relative;
+	overflow: hidden;
+}
+.service__sublogo{
+	width: 15%;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+.service-item .card-content{
+	padding: 15px;
+}
+.service-item__title{
+	font-size: 1.1em;
+	margin: 0 0 20px;
+}
+.service-item__date{
+
+}
+.service-item__extra{
+	color: #444;
+}
+
+@media only screen and (min-width: 993px){
+	.service__sublogo{
+		width: 10%;
+	}
+	.service-item .card-content{
+		padding: 0;
+		position: absolute;
+		width: 101%;
+		transition: 0.5s;
+		bottom: 0;
+		-webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+	}
+	.service-item .card-name{
+		position: absolute;
+		width: 100%;
+		-webkit-transform: translate3d(0,-95%,0);
+    transform: translate3d(0,-95%,0);
+	}
+	.service-item__title{
+		padding: 20px;
+		margin: 0;
+	}
+	.service-item .card-extra{
+		padding: 0 20px 20px;
+		overflow: hidden;
+	}
+	.service-item:hover .card-content{
+		-webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+	}
+	.service-item .card-image img{
+		transition: .5s;
+	}
+	.service-item:hover .card-image img{
+		-webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+	}
+
+}
 
 
