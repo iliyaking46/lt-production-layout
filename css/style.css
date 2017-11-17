@@ -313,12 +313,11 @@ nav .button-collapse i {
 }
 .slider__info-btn--mobile{
 	position: absolute;
-	bottom: 0;
+	bottom: 10px;
 	left: 0;
 	right: 0;
 	padding: 0.3rem 2rem;
 	margin: 0;
-	display: none;
 }
 @media (max-width: 600px) {
 	.slider__title{
@@ -401,6 +400,7 @@ nav .button-collapse i {
 
 .partners__slider .item{
 	padding: 5px 15px;
+	margin: 0 50px;
 }
 
 .page-footer {

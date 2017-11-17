@@ -60,7 +60,7 @@
 					<div class="row slider__wrapper">
 						<div class="col l4 offset-l1 m6 s12 slider__image">
 							<img src="images/lamp.png" alt="" class="responsive-img">
-							<a href="#" class="btn slider__info-btn--mobile show-on-small">Посмотреть!</a>
+							<a href="#" class="btn slider__info-btn--mobile hide-on-med-and-up">Посмотреть!</a>
 						</div>
 						<div class="col l6 offset-l1 s12 m6 slider__info">
 							<h4>Уличное освещение</h4>
@@ -76,7 +76,7 @@
 					<div class="row slider__wrapper">
 						<div class="col l4 offset-l1 m6 s12 slider__image">
 							<img src="images/lamp.png" alt="" class="responsive-img">
-							<a href="#" class="btn slider__info-btn--mobile show-on-small">Посмотреть!</a>
+							<a href="#" class="btn slider__info-btn--mobile hide-on-med-and-up">Посмотреть!</a>
 						</div>
 						<div class="col l6 offset-l1 s12 m6 slider__info">
 							<h4>Уличное освещение</h4>
@@ -203,7 +203,7 @@
 <script>
     $(document).ready(function() {
 				$('#main-slider').owlCarousel({
-            autoplay: false,
+            autoplay: true,
             autoplayTimeout: 5000,
 						autoplaySpeed: 1000,
 						dragEndSpeed: 500,
@@ -227,14 +227,13 @@
             loop:true,
             nav:false,
             dots: false,
-            margin:50,
             responsiveClass: true,
             responsive: {
-                0: { items:2 },
+                0: { items:1 },
                 700: { items:2 },
                 800: { items:3 },
                 1200: { items:3,
-											 margin:250}
+											 margin:100}
             }
         });
     });
