@@ -148,7 +148,7 @@ nav .button-collapse i {
 	z-index: -1;
 }
 .main-banner .section{
-	padding-top: 12rem;
+	padding-top: 20vh;
 }
 .main-banner__title {
 	font-size: 2.5em;
@@ -158,7 +158,7 @@ nav .button-collapse i {
 		min-height: 100vh;
 	}
 	.main-banner .section{
-		padding-top: 4rem;
+		padding-top: 12vh;
 		top: 0;
 	}
 	.main-banner__title {
@@ -204,66 +204,44 @@ nav .button-collapse i {
 	position: absolute;
 	top: 35%;
 	right: 50%;
+
 }
 .owl-prev{
 	left:0;
 }
+.owl-prev img{
+	animation: bounceInLeft 2.5s infinite paused;
+}
 .owl-prev:hover img{
-  animation-name: bounceInLeft;
-	animation-duration: .8s;
+	animation-play-state: running
 }
 .owl-next{
 	right:0;
 }
 .owl-next:hover img{
-  animation-name: bounceInRight;
-	animation-duration: .8s;
+	animation: bounceInRight 2.5s infinite paused;
+}
+.owl-next:hover img{
+	animation-play-state: running
 }
 @keyframes bounceInLeft {
-  0% {
+  0%,15%,35% {
     transform: translate3d(0, 0, 0);
   }
 
-  15% {
+  5%,20% {
     transform: translate3d(-10px, 0, 0);
   }
 
-	50% {
-    transform: translate3d(0, 0, 0);
-  }
-
-  65% {
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(0px, 0, 0);
-  }
 }
 @keyframes bounceInRight {
-  0% {
+	0%,15%,35% {
     transform: translate3d(0, 0, 0);
   }
 
-  15% {
+  5%,20% {
     transform: translate3d(10px, 0, 0);
   }
-
-	50% {
-    transform: translate3d(0, 0, 0);
-  }
-
-  65% {
-    transform: translate3d(10px, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(0px, 0, 0);
-  }
-}
-
-.bounceInLeft {
-  animation-name: bounceInLeft;
 }
 
 
@@ -412,17 +390,30 @@ nav .button-collapse i {
 }
 
 .social-icons__item {
+	line-height: 0;
 	display: inline-block;
 	margin-right: 10px;
+	vertical-align: middle;
 }
 
-.footer-copyright img {
+.footer-copyright__logo {
 	position: absolute;
 	right: 0;
 	width: 90px;
 	margin-top: -23px;
 }
-
+@media (max-width: 600px) {
+  .footer-copyright .container {
+    display: flex;
+    flex-direction: column; /* Stack on top */
+  }
+  .footer-text {
+    order: 2; /* Go down, bring Box B up */
+  }
+	.social-icons-list{
+		margin-bottom: 30px;
+	}
+}
 
 .news-title{
 	font-size: 2.5em;
