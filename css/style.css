@@ -10,6 +10,11 @@
 h1, h2, h3, h4, h5, h6{
 	font-weight: 300;
 }
+@media only screen and (max-width: 600px){
+	.title-margine__mobile{
+		margin-top: 3rem;
+	}
+}
 main{
 	min-height: 55vh;
 }
@@ -213,54 +218,75 @@ nav .button-collapse i {
 		width: 100px;
 	}
 }
-
+.owl-prev{
+	left:0;
+}
+.owl-next{
+	right:0;
+}
 .owl-nav [class*='owl-'] img{
 	position: absolute;
 	top: 45%;
 	right: 50%;
 
 }
-.owl-prev{
-	left:0;
-}
-.owl-prev img{
-	animation: bounceInLeft 2.5s infinite paused;
-}
+
 .owl-prev:hover img{
-	animation-play-state: running
+	-webkit-animation: bounceInLeft 2.5s infinite;
+	animation: bounceInLeft 2.5s infinite;
 }
-.owl-next{
-	right:0;
-}
+
 .owl-next:hover img{
-	animation: bounceInRight 2.5s infinite paused;
+	-webkit-animation: bounceInRight 2.5s infinite;
+	animation: bounceInRight 2.5s infinite;
 }
-.owl-next:hover img{
-	animation-play-state: running
-}
-@keyframes bounceInLeft {
+@-webkit-keyframes bounceInLeft {
   0%,15%,35% {
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 
   5%,20% {
-    transform: translate3d(-10px, 0, 0);
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}@keyframes bounceInLeft {
+  0%,15%,35% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 
+  5%,20% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
 }
-@keyframes bounceInRight {
+@-webkit-keyframes bounceInRight {
 	0%,15%,35% {
-    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 
   5%,20% {
-    transform: translate3d(10px, 0, 0);
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}@keyframes bounceInRight {
+	0%,15%,35% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  5%,20% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
   }
 }
 
 
 .slider__wrapper{
 	margin: 0;
+	position: relative;
 }
 .slider__title{
 	position: absolute;
@@ -286,8 +312,12 @@ nav .button-collapse i {
 	padding: 0.5rem 5rem;
 }
 .slider__info-btn--mobile{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
 	padding: 0.3rem 2rem;
-	margin: 2rem 0;
+	margin: 0;
 	display: none;
 }
 @media (max-width: 600px) {
@@ -555,8 +585,8 @@ nav .button-collapse i {
 		transition: .5s;
 	}
 	.service-item:hover .card-image img{
-		-webkit-transform: translateY(-40px);
-    transform: translateY(-40px);
+		-webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
 	}
 
 }

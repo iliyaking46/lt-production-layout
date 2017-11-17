@@ -203,7 +203,7 @@
 <script>
     $(document).ready(function() {
 				$('#main-slider').owlCarousel({
-            autoplay: true,
+            autoplay: false,
             autoplayTimeout: 5000,
 						autoplaySpeed: 1000,
 						dragEndSpeed: 500,
@@ -222,18 +222,19 @@
 
         $('#partners-slider').owlCarousel({
             autoplay: true,
-            autoplayTimeout: 3000,
+            autoplayTimeout: 3500,
 						autoplaySpeed: 2000,
             loop:true,
             nav:false,
             dots: false,
-            margin:0,
+            margin:50,
             responsiveClass: true,
             responsive: {
                 0: { items:2 },
                 700: { items:2 },
                 800: { items:3 },
-                1200: { items:3 }
+                1200: { items:3,
+											 margin:250}
             }
         });
     });
