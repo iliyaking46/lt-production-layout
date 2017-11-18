@@ -736,15 +736,69 @@ nav .button-collapse i {
 	color: #909090;
 	font-weight: 500;
 }
+.cooperate__title{
+	font-size: 1.8rem;
+	color: #717171;
+	text-align: center;
+}
+.cooperate-block {
+	position: relative;
+	text-align: center;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	background: #f7f7f7;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.cooperate-block:before {
+    content: "";
+    padding-top: 100%;
+    float: left;
+}
+.cooperate-block img{
+	top: 5%;
+	left: 5%;
+	position: absolute;
+}
+.cooperate-block p{
+	padding: 0 20%;
+}
 
 
-
-
-
-
-
-
-
+.cooperate-form input,
+.cooperate-form textarea{
+	background-color: transparent;
+	border: none;
+	border-radius: 5px;
+	height: 2.5rem;
+	width: 100%;
+	font-size: 1rem;
+	margin: 0 0 20px 0;
+	padding: 1rem;
+	-webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	outline: none !important;
+}
+.cooperate-form textarea{
+	overflow-y: hidden;
+	resize: vertical;
+	min-height: 8rem;
+}
+.cooperate-form input:focus,
+.cooperate-form textarea:focus{
+	-webkit-box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.16), 0 8px 10px 2px rgba(0, 0, 0, 0.12);
+	box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.16), 0 8px 10px 2px rgba(0, 0, 0, 0.12);
+}
+.cooperate-form label{
+	position: relative;
+}
+.cooperate-form label img {
+	vertical-align: text-top;
+}
+.cooperate-form__access{
+	width: 100%;
+}
 
 
 
