@@ -1,5 +1,5 @@
 //document.addEventListener("DOMContentLoaded", function() {
-jQuery(document).ready(function($){
+ $(document).ready(function() {
 		var li1o = document.getElementsByClassName("li1")[0];
     var li1 = window.getComputedStyle(li1o, null).getPropertyValue("width");
 

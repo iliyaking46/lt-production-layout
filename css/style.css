@@ -10,8 +10,11 @@
 h1, h2, h3, h4, h5, h6{
 	font-weight: 300;
 }
+.page-title{
+	font-size: 2.5em;
+}
 @media only screen and (max-width: 600px){
-	.title-margine__mobile{
+	.page-title{
 		margin-top: 3rem;
 	}
 }
@@ -144,7 +147,7 @@ nav .button-collapse i {
 }
 
 
-
+/*Главная*/
 .main-banner{
 	position: relative;
 	bottom: 90px;
@@ -158,6 +161,7 @@ nav .button-collapse i {
 .main-banner__title {
 	font-size: 2.5em;
 }
+
 @media only screen and (max-width: 600px){
 	.main-banner{
 		min-height: 100vh;
@@ -177,17 +181,9 @@ nav .button-collapse i {
 }
 
 
-
-
 .mainpage-slider {
 	position: relative;
   width: 100%;
-/*	padding-top: 10px;*/
-	background: rgb(255,244,0);
-	background: -moz-linear-gradient(-45deg, rgba(255,244,0,1) 0%, rgba(242,158,41,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg, rgba(255,244,0,1) 0%,rgba(242,158,41,1) 100%);
-	background: linear-gradient(135deg, rgba(255,244,0,1) 0%,rgba(242,158,41,1) 100%);
-	background: none;
 }
 .mainpage-slider .item{
 	padding-top: 100px;
@@ -402,7 +398,10 @@ nav .button-collapse i {
 	padding: 5px 15px;
 	margin: 0 50px;
 }
+/**/
 
+
+/*Футер*/
 .page-footer {
 	color: #000;
 }
@@ -462,8 +461,10 @@ nav .button-collapse i {
 		margin-bottom: 30px;
 	}
 }
+/**/
 
-.news-title{
+/*Новости*/
+.page-title{
 	font-size: 2.5em;
 }
 .news-item{
@@ -518,14 +519,11 @@ nav .button-collapse i {
 	}
 
 }
+/**/
 
 
 
-
-
-.service-title{
-	font-size: 2.5em;
-}
+/*услуги*/
 .service-item{
 	position: relative;
 	overflow: hidden;
@@ -580,6 +578,8 @@ nav .button-collapse i {
 	.service-item:hover .card-content{
 		-webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+		-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+		transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 	}
 	.service-item .card-image img{
 		transition: .5s;
@@ -590,5 +590,79 @@ nav .button-collapse i {
 	}
 
 }
+/**/
 
 
+/*Товары*/
+
+.products-title-wrapper img{
+	height: 4%;
+	position: absolute;
+}
+.products-title {
+	margin-left: 40px;
+}
+
+.products-subtitle {
+	margin-top: 0;
+	font-size: 1.5rem;
+}
+
+
+.product-item{
+	position: relative;
+	overflow: hidden;
+}
+.product-item .card-content{
+	padding: 10px;
+}
+.product-item__title{
+	font-size: 1.1em;
+	margin: 0 0 10px;
+	padding: 0;
+}
+.product-item__extra{
+	color: #444;
+}
+
+@media only screen and (min-width: 993px){
+	.product-item .card-content{
+		padding: 0;
+		position: absolute;
+		width: 101%;
+		-webkit-transition: 0.5s;
+		transition: 0.5s;
+		bottom: 0;
+		-webkit-transform: translate3d(0,100%,0);
+    transform: translate3d(0,100%,0);
+	}
+	.product-item .card-name{
+		position: absolute;
+		width: 100%;
+		-webkit-transform: translate3d(0,-95%,0);
+    transform: translate3d(0,-95%,0);
+	}
+	.product-item__title{
+		margin: 0;
+		padding: 10px
+	}
+	.product-item .card-extra{
+		padding: 0 10px 10px;
+		overflow: hidden;
+	}
+	.product-item:hover .card-content{
+		-webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+		-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+		transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	}
+	.product-item .card-image img{
+		-webkit-transition: .5s;
+		transition: .5s;
+	}
+	.product-item:hover .card-image img{
+		-webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+	}
+
+}
