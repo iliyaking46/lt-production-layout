@@ -18,6 +18,13 @@ h1, h2, h3, h4, h5, h6{
 		margin-top: 3rem;
 	}
 }
+nav ul li {
+	float: none;
+	text-align: left;
+}
+nav ul a {
+	font-size: 1.3em;
+}
 main{
 	min-height: 55vh;
 }
@@ -49,6 +56,81 @@ main{
 	background-color: #fff300;
 }
 
+
+
+
+
+.nav {
+	position: relative;
+	color: #fff;
+	background-color: #fff;
+	width: 100%;
+	font-family: "PT Sans Narrow", sans-serif;
+}
+
+.brand-logo{
+	line-height: normal;
+}
+.brand-logo img{
+	width: 90px;
+	margin-top: 5px;
+}
+
+@media only screen and (max-width: 992px){
+	.nav .brand-logo {
+		left: 0;
+		transform: none;
+	}
+	.brand-logo img{
+    width: 70px;
+    margin-top: 5px;
+	}
+}
+
+
+.nav-wrapper__dekstop-links-list{
+	padding-top: 15px;
+	list-style: none;
+	text-decoration: none;
+}
+
+.nav-wrapper__dekstop-link-element{
+	background: transparent;
+	border: none;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	padding: 0;
+}
+
+.nav-wrapper__dekstop-link-element > a{
+	color: #444;
+	display: inline;
+	padding: 15px 20px;
+	font-size: 1.3em;
+}
+
+.nav-wrapper__dekstop-underline {
+  width: 0;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 10px;
+  background: #FFF400;
+  height: 4px;
+  border: 1px solid #FFF400;
+	border: none;
+  transition: margin-left .5s ease-in-out, width .3s ease-out .08s;
+}
+
+.nav-wrapper__dekstop-link-element a:hover{
+	background: none;
+}
+
+
+
+
+
+/*Главная*/
 .parallax-container {
   min-height: 380px;
   line-height: 0;
@@ -69,91 +151,12 @@ main{
   }
 }
 
-
-@media only screen and (min-width: 601px){
-	nav,
-	nav .nav-wrapper i,
-	nav a.button-collapse,
-	nav a.button-collapse i {
-    height: 90px;
-    line-height: 64px;
-	}
-}
-.nav{
-	box-shadow: none;
-	font-family: "PT Sans Narrow", sans-serif;
-	line-height: 62px!important;
-}
-
-.brand-logo{
-	line-height: normal;
-}
-.brand-logo img{
-	width: 90px;
-	margin-top: 5px;
-}
-
-@media only screen and (max-width: 992px){
-	nav .brand-logo {
-		left: 0;
-		transform: none;
-	}
-	.brand-logo img{
-    width: 70px;
-    margin-top: 5px;
-}
-}
-
-nav .button-collapse i {
-    padding-top: 15px;
-}
-.nav-wrapper__dekstop-links-list{
-	padding-top: 15px;
-	list-style: none;
-	text-decoration: none;
-}
-
-.nav-wrapper__dekstop-link-element{
-	overflow: hidden;
-	background: transparent;
-	border: none;
-	float: left;
-	text-align: center;
-	text-decoration: none;
-	padding: 0;
-}
-
-.nav-wrapper__dekstop-link-element a{
-	color: #444;
-	display: inline;
-	padding: 15px 20px;
-	font-size: 1.3em;
-}
-
-.nav-wrapper__dekstop-underline {
-  width: 0;
-  position: absolute;
-  margin-top: 50px;
-  margin-left: 10px;
-  background: #FFF400;
-  height: 4px;
-  border: 1px solid #FFF400;
-	border: none;
-  transition: margin-left .5s ease-in-out, width .3s ease-out .08s;
-}
-
-.nav-wrapper__dekstop-link-element a:hover{
-	background: none;
-}
-
-
-/*Главная*/
 .main-banner{
 	position: relative;
-	bottom: 90px;
-	margin-bottom: -120px;
 	min-height: 70vh;
 	z-index: -1;
+	bottom: 115px;
+	margin-bottom: -115px;
 }
 .main-banner .section{
 	padding-top: 20vh;
@@ -179,6 +182,10 @@ nav .button-collapse i {
 	font-size: 1.3em;
 	line-height: 1.6em;
 }
+
+
+
+
 
 
 .mainpage-slider {
