@@ -405,6 +405,16 @@ main{
 	padding: 5px 15px;
 	margin: 0 50px;
 }
+.partners__slider a img{
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	-webkit-filter: opacity(0.5) grayscale(1);
+	filter: opacity(0.5) grayscale(1);
+}
+.partners__slider a:hover img{
+	-webkit-filter: opacity(1) grayscale(0);
+	filter: opacity(1) grayscale(0);
+}
 /**/
 
 
