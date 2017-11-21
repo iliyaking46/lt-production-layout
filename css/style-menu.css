@@ -74,14 +74,13 @@
   transition: transform 0.5s 0s, visibility 0s 0.5s;
 }
 .cd-dropdown h2 {
-  /* dropdown title - mobile version only */
-  position: relative;
-  z-index: 1;
-  color: #585a70;
-/*  background-color: #111433;*/
-  border-bottom: 1px solid #242643;
+	position: relative;
+	z-index: 1;
+	color: #080808;
+	background-color: #fff400;
 	margin: 0;
-    font-size: 2rem;
+	font-size: 2rem;
+	box-shadow: 0 0px 3px 2px rgba(0, 0, 0, 0.1);
 }
 .cd-dropdown .cd-close {
   /* 'X' close icon - mobile version only */
@@ -212,16 +211,11 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  border-top-width: 1px;
-  border-color: #242643;
-  border-style: solid;
 }
 .cd-dropdown-content li:first-of-type > a, .cd-dropdown-content ul li:first-of-type > a {
   border-top-width: 0;
 }
-.cd-dropdown-content li:last-of-type > a, .cd-dropdown-content ul li:last-of-type > a {
-  border-bottom-width: 1px;
-}
+
 .cd-dropdown-content .cd-divider, .cd-dropdown-content ul .cd-divider {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -319,10 +313,6 @@
 	}
 }
 
-.cd-dropdown-content .see-all a {
-  /* different style for the See all links */
-  color: #3f8654;
-}
 .cd-dropdown-content .cd-dropdown-gallery .cd-dropdown-item, .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item {
   /* items with picture (or icon) and title */
   height: 80px;
