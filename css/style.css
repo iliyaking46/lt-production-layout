@@ -71,7 +71,7 @@ main{
 .nav {
 	position: relative;
 	color: #fff;
-	background-color: #fff;
+	background-color: transparent;
 	width: 100%;
 	font-family: "PT Sans Narrow", sans-serif;
 }
@@ -95,8 +95,13 @@ main{
 	}
 }
 
-
+.nav-wrapper{
+	position: relative;
+}
 .nav-wrapper__dekstop-links-list{
+	position: absolute;
+	top: 0;
+	right: 0;
 	padding-top: 15px;
 	list-style: none;
 	text-decoration: none;
@@ -151,11 +156,11 @@ main{
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
-    position: absolute;
-    top: 40%;
+/*    position: absolute;*/
+/*    top: 40%;*/
   }
   #index-banner .section {
-    top: 10%;
+/*    top: 10%;*/
   }
 }
 
@@ -167,7 +172,7 @@ main{
 	margin-bottom: -115px;
 }
 .main-banner .section{
-	padding-top: 20vh;
+/*	padding-top: 20vh;*/
 }
 .main-banner__title {
 	font-size: 2.5em;
@@ -178,8 +183,8 @@ main{
 		min-height: 100vh;
 	}
 	.main-banner .section{
-		padding-top: 12vh;
-		top: 0;
+/*		padding-top: 12vh;*/
+/*		top: 0;*/
 	}
 	.main-banner__title {
     font-size: 2em;

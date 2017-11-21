@@ -30,7 +30,7 @@
     line-height: 60px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 993px) {
   .cd-dropdown h2,
   .cd-dropdown-content a,
   .cd-dropdown-content ul a {
@@ -76,7 +76,7 @@
 .cd-dropdown h2 {
 	position: relative;
 	z-index: 1;
-	color: #080808;
+	color: #404040;
 	background-color: #fff400;
 	margin: 0;
 	font-size: 2rem;
@@ -143,7 +143,7 @@
     top: 5px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 993px) {
   .cd-dropdown {
     position: absolute;
 		z-index: 3;
@@ -216,19 +216,6 @@
   border-top-width: 0;
 }
 
-.cd-dropdown-content .cd-divider, .cd-dropdown-content ul .cd-divider {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: #0b0e23;
-  font-size: 1.1rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #585a70;
-  text-transform: uppercase;
-}
-.cd-dropdown-content .cd-divider + li > a, .cd-dropdown-content ul .cd-divider + li > a {
-  border-top-width: 0;
-}
 .cd-dropdown-content a, .cd-dropdown-content .cd-search, .cd-dropdown-content .cd-divider, .cd-dropdown-content ul a, .cd-dropdown-content ul .cd-search, .cd-dropdown-content ul .cd-divider {
   /* Force Hardware Acceleration */
   -webkit-transform: translateZ(0);
@@ -281,7 +268,7 @@
     font-size: 1.8rem;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 993px) {
   .cd-dropdown-content, .cd-dropdown-content ul {
     padding-top: 0;
     overflow: visible;
@@ -313,58 +300,8 @@
 	}
 }
 
-.cd-dropdown-content .cd-dropdown-gallery .cd-dropdown-item, .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item {
-  /* items with picture (or icon) and title */
-  height: 80px;
-  line-height: 80px;
-}
-.cd-dropdown-content .cd-dropdown-gallery .cd-dropdown-item h3, .cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item h3 {
-  /* truncate text with ellipsis if too long */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.cd-dropdown-content .cd-dropdown-gallery .cd-dropdown-item {
-  padding-left: 90px;
-}
-.cd-dropdown-content .cd-dropdown-gallery img {
-  position: absolute;
-  display: block;
-  height: 40px;
-  width: auto;
-  left: 20px;
-  top: 50%;
-  margin-top: -20px;
-}
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item {
-  padding-left: 75px;
-  position: relative;
-}
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item p {
-  color: #111433;
-  font-size: 1.3rem;
-  /* hide description on small devices */
-  display: none;
-}
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item::before {
-  /* item icon */
-  content: '';
-  display: block;
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  margin-top: -20px;
-  width: 40px;
-  height: 40px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 40px 40px;
-}
-.cd-dropdown-content .cd-dropdown-icons .cd-dropdown-item.item-1::before {
-  background-image: url("../img/nucleo-icon-1.svg");
-}
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 993px) {
   .cd-dropdown-content {
     /* reset mobile style */
     position: static;
@@ -404,6 +341,13 @@
 		position: relative;
 		text-align: left;
 	}
+	li.has-children img{
+    position: absolute;
+    width: 11%;
+    top: 5px;
+    left: 8px;
+	}
+
 	.has-children > a {
 		padding-left: 50px;
 	}
@@ -765,7 +709,7 @@
 .cd-search input[type="search"]:focus:-ms-input-placeholder {
   color: rgba(17, 20, 51, 0.4);
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 993px) {
   .cd-search input[type="search"] {
     background-color: #ebebeb;
   }
@@ -813,7 +757,7 @@
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 993px) {
   .has-children > a::before, .has-children > a::after, .go-back a::before, .go-back a::after {
     background: #b3b3b3;
   }
@@ -832,7 +776,7 @@
   transform-origin: 9px 50%;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 993px) {
   .open-to-left .cd-dropdown-content > .has-children > a {
     padding-left: 40px;
     padding-right: 20px;

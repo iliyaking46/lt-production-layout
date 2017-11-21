@@ -13,30 +13,31 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="css/owl.carousel.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link rel="stylesheet" href="css/reset.css">
+	  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
 	<link rel="stylesheet" href="css/style-menu.css"> <!-- Resource style -->
 
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style-nice.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
 </head>
 <body>
-  <header class="nav transparent" role="navigation">
+  <header class="nav" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.html" class="brand-logo">
+      <a href="index.html" class="brand-logo">
         <img src="images/SVG/logo.svg" alt="">
       </a>
 
       <ul class="right nav-wrapper__dekstop-links-list ul1">
-       <hr class="nav-wrapper__dekstop-underline hrstalk hide-on-med-and-down">
+      	<hr class="nav-wrapper__dekstop-underline hrstalk hide-on-med-and-down">
         <li class="nav-wrapper__dekstop-link-element li1 hide-on-med-and-down"><a href="index.html">Главная</a></li>
-        <li class="nav-wrapper__dekstop-link-element li2">
-        	<div class="cd-dropdown-wrapper">
-							<a class="cd-dropdown-trigger" href="#0">
-								<span class="hide-on-small-only">Продукция</span>
+        <li class=" cd-dropdown-wrapper nav-wrapper__dekstop-link-element li2">
 
-							 <span class="hide-on-med-and-up right black-text">
-							 <i class="material-icons">menu</i>
+							<a class="cd-dropdown-trigger" href="#0">
+								<span class="hide-on-med-and-down">Продукция</span>
+
+							 <span class="hide-on-large-only black-text">
+							 	<i class="material-icons">menu</i>
 							 </span>
 
 							</a>
@@ -44,12 +45,11 @@
 								<h2>Навигация сайта</h2>
 								<a href="#0" class="cd-close">Close</a>
 								<ul class="cd-dropdown-content">
-									<li class="hide-on-med-and-up"><a href="index.html">Главная</a></li>
+									<li class="hide-on-large-only"><a href="index.html">Главная</a></li>
 
 
-									<li class="has-children">
+									<li class="has-children hide-on-med-and-down">
 										<a href="#">
-<!--											<img src="images/SVG/subLogo.svg" alt="">-->
 											LEDTelematics
 										</a>
 
@@ -59,9 +59,10 @@
 											<li><a href="#">Промышленное освещение</a></li>
 											<li><a href="#">Офисное освещение</a></li>
 										</ul>
+										<img src="images/SVG/subLogo.svg" alt="" class="hide-on-med-and-down">
 									</li>
 
-									<li class="has-children">
+									<li class="has-children hide-on-med-and-down">
 										<a href="#">LEDTelematics</a>
 
 										<ul class="cd-secondary-simple is-hidden">
@@ -72,7 +73,7 @@
 										</ul>
 									</li>
 
-									<li class="has-children">
+									<li class="has-children hide-on-med-and-down">
 										<a href="#">LEDTelematics</a>
 
 										<ul class="cd-secondary-simple is-hidden">
@@ -83,7 +84,7 @@
 										</ul>
 									</li>
 
-									<li class="has-children hide-on-med-and-up">
+									<li class="has-children hide-on-large-only">
 										<a href="#">Продукция</a>
 
 										<ul class="cd-secondary-dropdown is-hidden">
@@ -128,13 +129,13 @@
 									</li> <!-- .has-children -->
 
 
-									<li class="hide-on-med-and-up"><a href="services.html">Услуги</a></li>
-									<li class="hide-on-med-and-up"><a href="cooperate.html">Сотрудничество</a></li>
-									<li class="hide-on-med-and-up"><a href="news.html">Новости</a></li>
-									<li class="hide-on-med-and-up"><a href="contacts.html">Контакты</a></li>
+									<li class="hide-on-large-only"><a href="services.html">Услуги</a></li>
+									<li class="hide-on-large-only"><a href="cooperate.html">Сотрудничество</a></li>
+									<li class="hide-on-large-only"><a href="news.html">Новости</a></li>
+									<li class="hide-on-large-only"><a href="contacts.html">Контакты</a></li>
 								</ul> <!-- .cd-dropdown-content -->
 							</nav> <!-- .cd-dropdown -->
-					</div> <!-- .cd-dropdown-wrapper -->
+
 				</li>
 
         <li class="nav-wrapper__dekstop-link-element li3 hide-on-med-and-down"><a href="services.html">Услуги</a></li>
@@ -146,14 +147,12 @@
     </div>
   </header>
 
-  <div id="index-banner" class="parallax-container main-banner">
+  <div class="parallax-container main-banner valign-wrapper">
     <div class="section no-pad">
       <div class="container">
         <h1 class="main-banner__title center blue-grey-text text-darken-4">Производственная группа <span class="company-name">"ЛТ Продакшн"</span></h1>
 
           <h5 class="main-banner__subtitle grey-text text-darken-2">Является производителем светодиодных систем освещения, разработанных на основе собственных инновационных технологий с использованием высококачетственных компонентов. При изготовлении нашей продукции мы используем 94% комплектующих изделий собственного производства</h5>
-
-        <br><br>
       </div>
     </div>
     <div class="parallax"><img src="images/Group.png" alt="Unsplashed background img 1"></div>
