@@ -629,8 +629,9 @@ main{
 /*Товары*/
 
 .products-title-wrapper img{
-	height: 4%;
+	height: 7%;
 	position: absolute;
+	margin-top: -3px;
 }
 
 @media only screen and (max-width: 600px){
@@ -639,7 +640,7 @@ main{
 	}
 }
 .products-title {
-	margin-left: 40px;
+	margin-left: 50px;
 	margin-bottom: .5rem;
 }
 
