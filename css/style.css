@@ -12,12 +12,9 @@ h1, h2, h3, h4, h5, h6{
 }
 .page-title{
 	font-size: 2.5em;
+	margin-top: 1.2rem;
 }
-@media only screen and (max-width: 600px){
-	.page-title{
-		margin-top: 1.2rem;
-	}
-}
+
 nav ul li {
 	float: none;
 	text-align: left;
@@ -497,9 +494,6 @@ main{
 /**/
 
 /*Новости*/
-.page-title{
-	font-size: 2.5em;
-}
 .news-item{
 	position: relative;
 	overflow: hidden;
@@ -508,8 +502,15 @@ main{
 	font-size: 1.5em;
 	margin: 0 0 20px;
 }
-.news-item__date{
-
+.card-date{
+	padding-top: 5px;
+}
+.card-date img{
+	position: absolute;
+	margin-top: -4px;
+}
+.card-date p.news-item__date{
+	margin-left: 30px;
 }
 .news-item__extra{
 	color: #444;
@@ -813,6 +814,7 @@ main{
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 	outline: none !important;
+	border: 1px solid rgba(0, 0, 0, 0.08);
 }
 .cooperate-form textarea{
 	overflow-y: hidden;
@@ -842,3 +844,12 @@ main{
 
 
 
+
+.datetime img{
+	position: absolute;
+	margin-top: -5px;
+}
+
+.datetime p{
+	margin-left: 30px;
+}

@@ -3,12 +3,10 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>LT Production - Главная</title>
-
+  <title>LT Production - Услуги</title>
   <!-- CSS  -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style-menu.css">
   <link rel="stylesheet"href="css/style.css" type="text/css" media="screen,projection"/>
@@ -16,35 +14,30 @@
 
 </head>
 <body>
-	<header class="nav transparent" role="navigation">
+  <header class="nav" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.html" class="brand-logo">
+      <a href="index.html" class="brand-logo">
         <img src="images/SVG/logo.svg" alt="">
       </a>
 
-      <ul class="right nav-wrapper__dekstop-links-list ul1">
-       <hr class="nav-wrapper__dekstop-underline hrstalk hide-on-med-and-down">
-        <li class="nav-wrapper__dekstop-link-element li1 hide-on-med-and-down"><a href="index.html">Главная</a></li>
-        <li class="nav-wrapper__dekstop-link-element li2">
-        	<div class="cd-dropdown-wrapper">
-							<a class="cd-dropdown-trigger" href="#0">
-								<span class="hide-on-small-only">Продукция</span>
+      <ul class="nav-wrapper__dekstop-links-list">
+      	<hr class="nav-wrapper__dekstop-underline hrstalk hide-on-med-and-down">
+        <li id="li1" class="nav-wrapper__dekstop-link-element hide-on-med-and-down li1"><a href="index.html">Главная</a></li>
+        <li id="li2" class="cd-dropdown-wrapper nav-wrapper__dekstop-link-element">
 
-							 <span class="hide-on-med-and-up right black-text">
-							 <i class="material-icons">menu</i>
-							 </span>
-
-							</a>
-							<nav class="cd-dropdown">
+					<a class="cd-dropdown-trigger" href="#0">
+						<span class="hide-on-med-and-down">Продукция</span>
+						<span class="hide-on-large-only black-text">
+							<i class="material-icons">menu</i>
+						</span>
+					</a>
+					<nav class="cd-dropdown">
 								<h2>Навигация сайта</h2>
 								<a href="#0" class="cd-close">Close</a>
 								<ul class="cd-dropdown-content">
-									<li class="hide-on-med-and-up"><a href="index.html">Главная</a></li>
-
-
-									<li class="has-children">
+									<li class="hide-on-large-only"><a href="index.html">Главная</a></li>
+									<li class="has-children hide-on-med-and-down">
 										<a href="#">
-<!--											<img src="images/SVG/subLogo.svg" alt="">-->
 											LEDTelematics
 										</a>
 
@@ -54,9 +47,10 @@
 											<li><a href="#">Промышленное освещение</a></li>
 											<li><a href="#">Офисное освещение</a></li>
 										</ul>
+										<img src="images/SVG/subLogo.svg" alt="" class="hide-on-med-and-down">
 									</li>
 
-									<li class="has-children">
+									<li class="has-children hide-on-med-and-down">
 										<a href="#">LEDTelematics</a>
 
 										<ul class="cd-secondary-simple is-hidden">
@@ -67,7 +61,7 @@
 										</ul>
 									</li>
 
-									<li class="has-children">
+									<li class="has-children hide-on-med-and-down">
 										<a href="#">LEDTelematics</a>
 
 										<ul class="cd-secondary-simple is-hidden">
@@ -78,7 +72,7 @@
 										</ul>
 									</li>
 
-									<li class="has-children hide-on-med-and-up">
+									<li class="has-children hide-on-large-only">
 										<a href="#">Продукция</a>
 
 										<ul class="cd-secondary-dropdown is-hidden">
@@ -123,110 +117,51 @@
 									</li> <!-- .has-children -->
 
 
-									<li class="hide-on-med-and-up"><a href="services.html">Услуги</a></li>
-									<li class="hide-on-med-and-up"><a href="cooperate.html">Сотрудничество</a></li>
-									<li class="hide-on-med-and-up"><a href="news.html">Новости</a></li>
-									<li class="hide-on-med-and-up"><a href="contacts.html">Контакты</a></li>
+									<li class="hide-on-large-only"><a href="services.html">Услуги</a></li>
+									<li class="hide-on-large-only"><a href="cooperate.html">Сотрудничество</a></li>
+									<li class="hide-on-large-only"><a href="news.html">Новости</a></li>
+									<li class="hide-on-large-only"><a href="contacts.html">Контакты</a></li>
 								</ul> <!-- .cd-dropdown-content -->
 							</nav> <!-- .cd-dropdown -->
-					</div> <!-- .cd-dropdown-wrapper -->
+
 				</li>
 
-        <li class="nav-wrapper__dekstop-link-element li3 hide-on-med-and-down"><a href="services.html">Услуги</a></li>
-        <li class="nav-wrapper__dekstop-link-element li4 hide-on-med-and-down"><a href="cooperate.html">Сотрудничество</a></li>
-        <li class="nav-wrapper__dekstop-link-element li5 hide-on-med-and-down"><a href="news.html">Новости</a></li>
-        <li class="nav-wrapper__dekstop-link-element li6 hide-on-med-and-down"><a href="contacts.html">Контакты</a></li>
+        <li id="li3" class="nav-wrapper__dekstop-link-element hide-on-med-and-down"><a href="services.html">Услуги</a></li>
+        <li id="li4" class="nav-wrapper__dekstop-link-element hide-on-med-and-down"><a href="cooperate.html">Сотрудничество</a></li>
+        <li id="li5" class="active nav-wrapper__dekstop-link-element hide-on-med-and-down"><a href="news.html">Новости</a></li>
+        <li id="li6" class="nav-wrapper__dekstop-link-element li6 hide-on-med-and-down"><a href="contacts.html">Контакты</a></li>
       </ul>
 
     </div>
   </header>
 
 	<main>
+
 		<div class="container">
-			<h1 class="page-title">Новости</h1>
-			<div class="row">
-
-				<div class="col s12 m6">
-					<a href="#">
-						<div class="card hoverable z-depth-3 news-item">
-							<div class="card-image">
-								<img src="images/sample.jpg">
-							</div>
-							<div class="card-content white">
-								<div class="card-name white">
-									<h2 class="news-item__title grey-text text-darken-3">Новость №1</h2>
-								</div>
-								<div class="card-extra">
-									<div class="card-date">
-										<img src="images/calendar.svg" alt="">
-										<p class="news-item__date grey-text text-darken-1">29.11.2017</p>
-									</div>
-									<p class="news-item__extra grey-text text-darken-4">Подробнее <i class="material-icons">chevron_right</i></p>
-								</div>
-							</div>
-            </div>
-					</a>
-				</div>
-
-				<div class="col s12 m6">
-					<a href="#">
-						<div class="card hoverable z-depth-3 news-item">
-							<div class="card-image">
-								<img src="images/sample.jpg">
-							</div>
-							<div class="card-content white">
-								<div class="card-name white">
-									<h2 class="news-item__title grey-text text-darken-3">Новость №1</h2>
-								</div>
-								<div class="card-extra">
-									<p class="news-item__date grey-text text-darken-1">01.12.2017</p>
-									<p class="news-item__extra grey-text text-darken-4">Подробнее <i class="material-icons">chevron_right</i></p>
-								</div>
-							</div>
-            </div>
-					</a>
-				</div>
-
-				<div class="col s12 m6">
-					<a href="#">
-						<div class="card hoverable z-depth-3 news-item">
-							<div class="card-image">
-								<img src="images/sample.jpg">
-							</div>
-							<div class="card-content white">
-								<div class="card-name white">
-									<h2 class="news-item__title grey-text text-darken-3">Новость №1</h2>
-								</div>
-								<div class="card-extra">
-									<p class="news-item__date grey-text text-darken-1">01.12.2017</p>
-									<p class="news-item__extra grey-text text-darken-4">Подробнее <i class="material-icons">chevron_right</i></p>
-								</div>
-							</div>
-            </div>
-					</a>
-				</div>
-
-
+			<h1 class="page-title">Заголовок</h1>
+			<div class="datetime">
+				<img src="images/calendar.svg" alt="">
+				<p class="grey-text">29.11.2017</p>
 			</div>
 
-				<!-- пагинация -->
 			<div class="row">
 				<div class="col s12">
-					<ul class="pagination">
-					<!-- НЕ БОЛЬШЕ 6 LI НА СТРАНИЦЕ!-->
-						<li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-						<li class="active"><a href="#!">1</a></li>
-						<li class=""><a href="#!">2</a></li>
-						<li class=""><a href="#!">3</a></li>
-						<li class=""><a href="#!">4</a></li>
-						<li class=""><a href="#!">...</a></li>
-						<li class=""><a href="#!">6</a></li>
-						<li class=""><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-  				</ul>
+					<p class="grey-text text-darken-1">
+					Наша компания производит широкий спектр светодиодных светильников. Разработки ведутся нашими квалифицированными специалистами и дизайнерами с учетом современных технических и эстетических тенденций.
+					</p>
+				</div>
+				<div class="col s12 l10 offset-l1">
+					<img src="images/sample.jpg" alt="" class="responsive-img">
+				</div>
+				<div class="col s12">
+					<p class="grey-text text-darken-1">
+					Наша компания производит широкий спектр светодиодных светильников. Разработки ведутся нашими квалифицированными специалистами и дизайнерами с учетом современных технических и эстетических тенденций.
+					Наша компания производит широкий спектр светодиодных светильников. Разработки ведутся нашими квалифицированными специалистами и дизайнерами с учетом современных технических и эстетических тенденций.
+					</p>
 				</div>
 			</div>
-
 		</div>
+
 	</main>
 
 	<footer class="page-footer white">
@@ -272,6 +207,6 @@
   <script src="js/init.js"></script>
 	<script src="js/jquery.menu-aim.js"></script>
 	<script src="js/menu.js"></script>
-   <script src="js/menu-underline.js"></script>
+  <script src="js/menu-underline.js"></script>
   </body>
 </html>
