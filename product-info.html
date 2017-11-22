@@ -43,7 +43,7 @@
 
 									<li class="has-children">
 										<a href="#">
-<!--											<img src="images/SVG/subLogo.svg" alt="">-->
+											<img src="images/SVG/subLogo.svg" alt="">
 											LEDTelematics
 										</a>
 
@@ -84,38 +84,42 @@
 											<li class="go-back"><a href="#0">Назад</a></li>
 											<li class="see-all"><a href="#">Вся продукция</a></li>
 
-												<li class="has-children">
-													<a href="#">LEDTelematics</a>
+											<li class="has-children">
 
-													<ul class="cd-secondary-simple is-hidden">
-														<li class="go-back"><a href="#0">Назад</a></li>
-														<li><a href="#0">Уличное освещение</a></li>
-														<li><a href="#">Промышленное освещение</a></li>
-														<li><a href="#">Офисное освещение</a></li>
-													</ul>
-												</li>
+												<a href="#">LEDTelematics</a>
 
-												<li class="has-children">
-													<a href="#">LEDTelematics</a>
+												<ul class="cd-secondary-simple is-hidden">
+													<li class="go-back"><a href="#0">Назад</a></li>
+													<li><a href="#0">Уличное освещение</a></li>
+													<li><a href="#">Промышленное освещение</a></li>
+													<li><a href="#">Офисное освещение</a></li>
+												</ul>
+											</li>
 
-													<ul class="cd-secondary-simple is-hidden">
-														<li class="go-back"><a href="#0">Назад</a></li>
-														<li><a href="#0">Уличное освещение</a></li>
-														<li><a href="#">Промышленное освещение</a></li>
-														<li><a href="#">Офисное освещение</a></li>
-													</ul>
-												</li>
+											<li class="has-children">
+												<a href="#">
+													<img src="images/SVG/subLogo.svg" alt="">
+													LEDTelematics
+												</a>
 
-												<li class="has-children">
-													<a href="#">LEDTelematics</a>
+												<ul class="cd-secondary-simple is-hidden">
+													<li class="go-back"><a href="#0">Назад</a></li>
+													<li><a href="#0">Уличное освещение</a></li>
+													<li><a href="#">Промышленное освещение</a></li>
+													<li><a href="#">Офисное освещение</a></li>
+												</ul>
+											</li>
 
-													<ul class="cd-secondary-simple is-hidden">
-														<li class="go-back"><a href="#0">Назад</a></li>
-														<li><a href="#0">Уличное освещение</a></li>
-														<li><a href="#">Промышленное освещение</a></li>
-														<li><a href="#">Офисное освещение</a></li>
-													</ul>
-												</li>
+											<li class="has-children">
+												<a href="#">LEDTelematics</a>
+
+												<ul class="cd-secondary-simple is-hidden">
+													<li class="go-back"><a href="#0">Назад</a></li>
+													<li><a href="#0">Уличное освещение</a></li>
+													<li><a href="#">Промышленное освещение</a></li>
+													<li><a href="#">Офисное освещение</a></li>
+												</ul>
+											</li>
 
 
 										</ul> <!-- .cd-secondary-dropdown -->
@@ -151,13 +155,13 @@
 				<div class="col s12 l5">
 					<div class="product-images">
 						<div class="product-image">
-							<img src="images/sample.jpg" alt="" class="responsive-img z-depth-2">
+							<img src="images/sample.jpg" alt="" class="responsive-img z-depth-2" name="main_img">
 						</div>
 						<div class="product-thumb">
-							<img src="images/sample.jpg" alt="" class="responsive-img z-depth-2">
-							<img src="images/sample.jpg" alt="" class="responsive-img z-depth-2">
-							<img src="images/sample.jpg" alt="" class="responsive-img z-depth-2">
-							<img src="images/sample.jpg" alt="" class="responsive-img z-depth-2">
+							<img src="images/sample2.jpg" alt="" class="responsive-img z-depth-2" onClick="changeImage ('images/sample2.jpg')">
+							<img src="images/sample.jpg" alt="" class="responsive-img z-depth-2" onClick="changeImage ('images/sample.jpg')">
+							<img src="images/sample2.jpg" alt="" class="responsive-img z-depth-2" onClick="changeImage ('images/sample2.jpg')">
+							<img src="images/sample.jpg" alt="" class="responsive-img z-depth-2" onClick="changeImage ('images/sample.jpg')">
 						</div>
 					</div>
 				</div>
@@ -323,6 +327,11 @@
 	<script src="js/jquery.menu-aim.js"></script>
 	<script src="js/menu.js"></script>
    <script src="js/menu-underline.js"></script>
+   <script type="text/javascript">
+		function changeImage (a) {
+				document.main_img.src=a
+		}
+	</script>
   </body>
 </html>
 

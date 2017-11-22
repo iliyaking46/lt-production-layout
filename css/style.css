@@ -726,6 +726,9 @@ main{
 	margin-top: 1rem;
 	text-align: center;
 }
+.product-thumb img:hover {
+	cursor: pointer;
+}
 .product-thumb img{
 	width: 20%;
 	margin: 0 0.3rem;
