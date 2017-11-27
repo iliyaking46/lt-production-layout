@@ -3,6 +3,7 @@
 window.onload=function(){
 
 		var active = document.querySelector('li.active')
+		console.log(active);
 		var activePos = active.getAttribute('id');
 		var activeWidth = window.getComputedStyle(active, null).getPropertyValue("width");
 
@@ -28,7 +29,7 @@ window.onload=function(){
 
     var clicked1 = "calc(" + initialPosition() + ")"
     var clicked2 = "calc( " + activeWidth + ")";
-
+		console.log(initialPosition());
     $(".hrstalk").css({
       marginLeft: "calc(" + initialPosition() + ")",
       width: "calc( " + activeWidth + ")"
@@ -38,13 +39,13 @@ window.onload=function(){
 		switch(activePos)
 				{
 			case 'li1':
-				return 0;
+				return '0px';
 			case 'li2':
 				return `${li1}`;
 			case 'li3':
 				return `${li1} + ${li2}`;
 			case 'li4':
-				return `${li1} + ${li2}+ ${li3}`;
+				return `${li1} + ${li2} + ${li3}`;
 			case 'li5':
 				return `${li1} + ${li2} + ${li3} + ${li4}`;
 			case 'li6':
