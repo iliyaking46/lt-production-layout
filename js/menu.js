@@ -5,6 +5,41 @@ jQuery(document).ready(function($){
 		toggleNav();
 	});
 
+
+	width = $(window).width();
+	$(window).resize(function() {
+		width = $(window).width();
+	});
+
+	$('.cd-dropdown-trigger').hover(function (event) {
+		event.preventDefault;
+		if (width >= 976) {
+		myOpen();
+		}
+	});
+
+	//to make the dropdown disappear on hover
+	$('.cd-dropdown-wrapper').mouseleave(function (event) {
+		event.preventDefault();
+		if (width >= 976) {
+			$('.cd-dropdown-trigger').trigger('click');
+		}
+	});
+
+//	function to make the dropdown appear
+	function myOpen() {
+		var navIsVisible = true;
+		$('.cd-dropdown').toggleClass('dropdown-is-active', navIsVisible);
+		$('.cd-dropdown-trigger').toggleClass('dropdown-is-active', navIsVisible);
+		if (!navIsVisible) {
+			$('.cd-dropdown').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function () {
+				$('.has-children ul').addClass('is-hidden');
+				$('.move-out').removeClass('move-out');
+				$('.is-active').removeClass('is-active');
+			});
+		}
+	};
+
 	//close meganavigation
 	$('.cd-dropdown .cd-close').on('click', function(event){
 		event.preventDefault();

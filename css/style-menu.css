@@ -167,7 +167,7 @@
     transform: translateY(30px);
     -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s, -webkit-transform 0.3s 0s;
     -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, -moz-transform 0.3s 0s;
-    transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s;
   }
   .open-to-left .cd-dropdown {
     /* use the .open-to-left class if you want to open the dropdown on the left */
