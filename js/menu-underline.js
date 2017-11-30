@@ -7,12 +7,12 @@ window.onload=function(){
 		var activeWidth = window.getComputedStyle(active, null).getPropertyValue("width");
 
 //		var activeLiwidth = window.getComputedStyle(li1o, null).getPropertyValue("width");
-
 		var li1o = document.getElementById("li1");
     var li1 = window.getComputedStyle(li1o, null).getPropertyValue("width");
 
     var li2o = document.getElementById("li2");
     var li2 = window.getComputedStyle(li2o, null).getPropertyValue("width");
+		var li2width = window.getComputedStyle(document.getElementsByClassName("cd-dropdown-content")[0], null).getPropertyValue("width");
 
     var li3o = document.getElementById("li3");
     var li3 = window.getComputedStyle(li3o, null).getPropertyValue("width");
@@ -71,7 +71,7 @@ $("#li1").mouseenter(function(){
 $("#li2").mouseenter(function(){
     $(".hrstalk").css({
       marginLeft: "calc( " + li1 + ")",
-      width: "calc( " + li2 + ")"
+      width: "calc( " + li2width + ")"
     });
 });
 //next
