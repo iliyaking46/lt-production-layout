@@ -10,6 +10,7 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style-menu.css">
+	<link rel="stylesheet" href="css/cloudzoom.css">
   <link rel="stylesheet"href="css/style.css" type="text/css" media="screen,projection"/>
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
@@ -155,13 +156,12 @@
 				<div class="col s12 l5">
 					<div class="product-images">
 						<div class="product-image">
-							<img src="images/sample.jpg" alt="" class="responsive-img z-depth-2" name="main_img">
+						<img class = "responsive-img z-depth-2 cloudzoom" src = "images/sample.jpg"
+         data-cloudzoom = "zoomImage: 'images/sample.jpg',zoomPosition: 'inside', autoInside:true, zoomFlyOut:false, zoomOffsetX:0 ">
 						</div>
 						<div class="product-thumb">
-							<img src="images/sample2.jpg" alt="" class="responsive-img z-depth-2" onClick="changeImage ('images/sample2.jpg')">
-							<img src="images/sample.jpg" alt="" class="responsive-img z-depth-2" onClick="changeImage ('images/sample.jpg')">
-							<img src="images/sample2.jpg" alt="" class="responsive-img z-depth-2" onClick="changeImage ('images/sample2.jpg')">
-							<img src="images/sample.jpg" alt="" class="responsive-img z-depth-2" onClick="changeImage ('images/sample.jpg')">
+							<img class = 'responsive-img z-depth-2 cloudzoom-gallery' src = "images/sample.jpg" data-cloudzoom = "useZoom: '.cloudzoom', image: 'images/sample.jpg'" >
+							<img class = 'responsive-img z-depth-2 cloudzoom-gallery' src = "images/sample2.jpg" data-cloudzoom = "useZoom: '.cloudzoom', image: 'images/sample2.jpg'" >
 						</div>
 					</div>
 				</div>
@@ -283,7 +283,7 @@
 
 	</main>
 
-    <footer class="page-footer white">
+   <footer class="page-footer white">
    	<div class="footer-contacts">
    		 <div class="container">
 					<div class="row">
@@ -326,11 +326,10 @@
   <script src="js/init.js"></script>
 	<script src="js/jquery.menu-aim.js"></script>
 	<script src="js/menu.js"></script>
-   <script src="js/menu-underline.js"></script>
-   <script type="text/javascript">
-		function changeImage (a) {
-				document.main_img.src=a
-		}
+	<script src="js/menu-underline.js"></script>
+	<script src="js/cloudzoom.js"></script>
+	<script type="text/javascript">
+		CloudZoom.quickStart();
 	</script>
   </body>
 </html>
