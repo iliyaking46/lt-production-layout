@@ -18,6 +18,15 @@ jQuery(document).ready(function($){
 		}
 	});
 
+//	$(document).mouseup(function (e){ // клик
+//		var div = $('.cd-dropdown-wrapper'); // класс
+//		if (!div.is(e.target) // если клик был не по меню
+//		    && div.has(e.target).length === 0
+//				&& $('.cd-dropdown').hasClass('dropdown-is-active')){ // и не по его дочерним элементам
+//			toggleNav(); // скрываем его
+//		}
+//	});
+
 	//to make the dropdown disappear on hover
 	$('.cd-dropdown-wrapper').mouseleave(function (event) {
 		event.preventDefault();

@@ -306,7 +306,7 @@
     /* reset mobile style */
     position: static;
     height: auto;
-/*    width: 280px;*/
+    width: 280px;
   }
   .cd-dropdown-content > li:last-of-type a {
     border-bottom: none;
@@ -326,7 +326,6 @@
     opacity: 1;
   }
 	.cd-dropdown-content ul.cd-secondary-simple{
-		width: 280px;
 		-webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -343,14 +342,14 @@
 		text-align: left;
 	}
 	li.has-children img{
-		width: 80px;
-		height: 100%;
-    display: block;
-    margin: auto;
+ 		position: absolute;
+    width: 11%;
+    top: 5px;
+    left: 8px;
 	}
 
 	.has-children > a {
-		height: 100px;
+		padding-left: 50px;
 	}
   .cd-dropdown-content .cd-secondary-dropdown,
 	.cd-dropdown-content .cd-dropdown-gallery,

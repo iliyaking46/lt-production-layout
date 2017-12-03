@@ -515,8 +515,8 @@ main{
 .news-item__extra{
 	color: #444;
 	position: absolute;
-	right: 24px;
-	bottom: 24px;
+	right: 22px;
+	bottom: 22px;
 }
 
 @media only screen and (min-width: 993px){
