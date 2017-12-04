@@ -204,6 +204,17 @@ main{
 }
 .mainpage-slider .item{
 	padding-top: 100px;
+	height: 400px;
+}
+@media (max-width: 600px){
+	.mainpage-slider .item{
+		height: 600px;
+	}
+	.owl-carousel .owl-item img{
+		margin: auto;
+		width: auto;
+    height: 300px;
+	}
 }
 .mainpage-slider .owl-item:nth-child(2n+1) .item{
 	background: rgb(255,244,0);
@@ -327,8 +338,8 @@ main{
 .slider__info-btn--mobile{
 	position: absolute;
 	bottom: 10px;
-	left: 0;
-	right: 0;
+	left: 10px;
+	right: 10px;
 	padding: 0.3rem 2rem;
 	margin: 0;
 }
