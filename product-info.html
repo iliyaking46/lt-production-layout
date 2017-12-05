@@ -164,6 +164,9 @@
 							<img class = 'responsive-img z-depth-2 cloudzoom-gallery' src = "images/sample2.jpg" data-cloudzoom = "useZoom: '.cloudzoom', image: 'images/sample2.jpg'" >
 						</div>
 					</div>
+					<div class="where-to-buy">
+						<a class="btn border-btn modal-trigger" href="#modal-store">Где купить?</a>
+					</div>
 				</div>
 				<div class="col s12 l7">
 					<div class="product-info">
@@ -319,7 +322,49 @@
     </div>
   </footer>
 
-
+	<div id="modal-store" class="modal" style="max-width: 850px; z-index: 1003; display: none; opacity: 0; transform: scaleX(0.7); top: 4%;">
+		<div class="modal-content">
+			<h4 class="flow-text">
+			 Где купить?
+				<a href="#!" class="modal-close right">
+					<i class="material-icons">close</i>
+				</a>
+			</h4>
+			<ul class="collection">
+				<li class="collection-item">
+					<div class="row">
+						<div class="col l3 m5 sm5 s12">
+							<p>ТЦ Белая дача</p>
+						</div>
+						<div class="col l5 m7 sm7 s12">
+							<p class="grey-text text-darken-1"><i class="material-icons left">location_city</i>Москва</p>
+							<p class="grey-text text-darken-1"><i class="material-icons left">place</i>г. Москва, ул. Мира, 51</p>
+							<p class="grey-text text-darken-1"><i class="material-icons left">access_time</i>Пн. - Вс.: 10:00 - 19:00</p>
+						</div>
+						<div class="col l4 s12 center">
+							<a href="tel:+79611960782" class="waves-effect waves-light btn border-btn pickup-btn"><i class="material-icons left">phone</i>+7 961 196-0782</a>
+						</div>
+					</div>
+				</li>
+				<li class="collection-item">
+					<div class="row">
+						<div class="col l3 m5 sm5 s12">
+							<p>ТЦ Мега Белая дача</p>
+						</div>
+						<div class="col l5 m7 sm7 s12">
+						<p class="grey-text text-darken-1"><i class="material-icons left">location_city</i>Санкт-Петербург</p>
+							<p class="grey-text text-darken-1"><i class="material-icons left">place</i>
+							<a href="#">г. Санкт-Петербург, ул. Пушкина, 51</a></p>
+							<p class="grey-text text-darken-1"><i class="material-icons left">access_time</i>Пн. - Вс.: 10:00 - 20:00</p>
+						</div>
+						<div class="col l4 s12 center">
+							<a href="tel:+79611960781" class="waves-effect waves-light btn border-btn pickup-btn"><i class="material-icons left">phone</i> +7 961 196-0781</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.min.js"></script>
@@ -330,6 +375,9 @@
 	<script src="js/cloudzoom.js"></script>
 	<script type="text/javascript">
 		CloudZoom.quickStart();
+		$(function(){
+    	$('.modal').modal();
+  	});
 	</script>
   </body>
 </html>
