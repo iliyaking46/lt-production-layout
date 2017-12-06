@@ -152,6 +152,11 @@
 					Став нашим дилером, вы получите дополнительные возможности для развития и повышения эффективности вашего бизнеса. Мы будем рады работать с инициативными и предприимчивыми людьми, независимо от степени развития компании и от региона.
 				</p>
 			</div>
+
+			<div class="where-to-buy">
+					<a class="btn btn-lt modal-trigger" href="#modal-store">Наши диллеры</a>
+			</div>
+
 			<h2 class="cooperate__title">
 				Мы предлагаем нашим дилерам следующие преференции:
 			</h2>
@@ -210,9 +215,10 @@
 						</p>
 					</div>
 				</div>
+				<a name="dealler"></a>
 			</div>
 
-			<h2 class="cooperate__title">
+			<h2 class="cooperate__title" >
 				Чтобы получить дилерское предложение, заполните форму заявки:
 			</h2>
 			<div class="row cooperate-form">
@@ -252,7 +258,49 @@
 		</div>
 
 	</main>
-
+	<div id="modal-store" class="modal">
+		<div class="modal-content">
+			<h4 class="flow-text">
+			 Где купить?
+				<a href="#!" class="modal-close right">
+					<i class="material-icons">close</i>
+				</a>
+			</h4>
+			<ul class="collection">
+				<li class="collection-item">
+					<div class="row">
+						<div class="col l3 m5 sm5 s12">
+							<p>ТЦ Белая дача</p>
+						</div>
+						<div class="col l5 m7 sm7 s12">
+							<p class="grey-text text-darken-1"><i class="material-icons left">location_city</i>Москва</p>
+							<p class="grey-text text-darken-1"><i class="material-icons left">place</i>г. Москва, ул. Мира, 51</p>
+							<p class="grey-text text-darken-1"><i class="material-icons left">access_time</i>Пн. - Вс.: 10:00 - 19:00</p>
+						</div>
+						<div class="col l4 s12 center">
+							<a href="tel:+79611960782" class="waves-effect waves-light btn border-btn pickup-btn"><i class="material-icons left">phone</i>+7 961 196-0782</a>
+						</div>
+					</div>
+				</li>
+				<li class="collection-item">
+					<div class="row">
+						<div class="col l3 m5 sm5 s12">
+							<p>ТЦ Мега Белая дача</p>
+						</div>
+						<div class="col l5 m7 sm7 s12">
+						<p class="grey-text text-darken-1"><i class="material-icons left">location_city</i>Санкт-Петербург</p>
+							<p class="grey-text text-darken-1"><i class="material-icons left">place</i>
+							<a href="#">г. Санкт-Петербург, ул. Пушкина, 51</a></p>
+							<p class="grey-text text-darken-1"><i class="material-icons left">access_time</i>Пн. - Вс.: 10:00 - 20:00</p>
+						</div>
+						<div class="col l4 s12 center">
+							<a href="tel:+79611960781" class="waves-effect waves-light btn border-btn pickup-btn"><i class="material-icons left">phone</i> +7 961 196-0781</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
     <footer class="page-footer white">
    	<div class="footer-contacts">
    		 <div class="container">
@@ -297,5 +345,10 @@
 	<script src="js/jquery.menu-aim.js"></script>
 	<script src="js/menu.js"></script>
   <script src="js/menu-underline.js"></script>
+  <script type="text/javascript">
+		$(function(){
+    	$('.modal').modal();
+  	});
+	</script>
   </body>
 </html>
